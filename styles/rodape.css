@@ -5,19 +5,46 @@ html {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     width: 100vw;
+    height: 90vh;
     background: black url("../images/pagina-inicial-rodape.png") no-repeat center center;
     background-size: cover;
     color: #DDD;
     font-family: "Lexend Zetta", Arial, Helvetica, sans-serif;
 }
 
-footer>p {
-    position: absolute;
-    bottom: 0px;
+.logo-container {
+    width: 100%;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.inferior-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inferior-container>section {
+    width: 50%;
+    margin: 100px;
+    text-align: center;
+}
+
+.inferior-container a {
+    text-decoration: none;
+    color: white;
+    line-height: 3em;
+}
+
+.inferior-container a:hover {
+    text-decoration: underline;
+}
+
+.rights {
+    bottom: 50px;
+    position: relative;
+    margin: auto;
+    text-align: center;
 }
