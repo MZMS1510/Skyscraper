@@ -23,7 +23,7 @@ document.getElementById("open-universe").addEventListener("click", function(){
 
     if (menu_universe.style.left = "-460px"){
         menu.style.left = "-460px"
-        menu.style.transition = "none"
+        menu.style.transition = "0.9s ease all"
         close_universe.style.fontWeight = "bold"
         close_universe.style.border = "2px solid #5a5b5b"
         close_universe.style.textDecoration = "none"
@@ -40,7 +40,7 @@ document.getElementById("close-universe").addEventListener("click", function(){
 
     if(menu_universe.style.left = "0"){
         menu.style.left = "0"
-        menu.style.transition = "none"
+        menu.style.transition = "0.9s ease all"
         menu_universe.style.left = "-460px"
         close_universe.style.border = "2px solid black"
         close_universe.style.color = "black"
