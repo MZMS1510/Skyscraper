@@ -1,0 +1,23 @@
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: black url("../images/pagina-inicial-rodape.png") no-repeat center center;
+    background-size: cover;
+    color: #DDD;
+    font-family: "Lexend Zetta", Arial, Helvetica, sans-serif;
+}
+
+footer>p {
+    position: absolute;
+    bottom: 0px;
+}
