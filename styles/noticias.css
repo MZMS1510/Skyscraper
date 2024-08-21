@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    font-family: "Lexend Zetta", Arial, Helvetica, sans-serif;
+    background: white url("../images/pagina-inicial-rodape.png") no-repeat fixed center center;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.noticia {
+    margin: 30px;
+    width: 500px;
+    height: 500px;
+    border-radius: 36px;
+    backdrop-filter: blur(20px);
+    font-family: "Saira";
+}
+
+.noticia img {
+    object-fit: cover;
+    border-radius: 36px 36px 0px 0px;
+    width: 100%;
+    height: 160px;
+}
+
+.noticia p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.noticia>section {
+    position: relative;
+    padding: 0px 60px;
+}
+
+.noticia a {
+    position: absolute;
+    right: 60px;
+    text-align: right;
+}
+
+.date-category-container {
+    display: flex;
+    justify-content: space-between;
+}
