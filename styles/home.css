@@ -41,7 +41,7 @@ nav{
 }
 
 #menu {
-    background-color: #8e8e8ee8;
+    background-color: #8e8e8e90;
     position: absolute;
     top: 0;
     left: -460px;
@@ -405,7 +405,7 @@ p{
 @media only screen and (min-width: 500px) and (max-width: 980px) {
 
     #menu {
-        background-color: #8e8e8ee8;
+        background-color: #8e8e8e90;
         position: absolute;
         top: 0;
         left: -460px;

@@ -1,18 +1,22 @@
 document.getElementById("open-menu").addEventListener("click", function(){
     let menu = document.getElementById("menu")
+    let open_menu = document.getElementById("open-menu")
 
     if (menu.style.left = "-460px"){
         menu.style.left = "0"
         menu.style.transition = "1s ease all"
+        open_menu.style.visibility = "hidden"
     }
 })
 
 document.getElementById("close-menu").addEventListener("click", function(){
     let menu = document.getElementById("menu")
+    let open_menu = document.getElementById("open-menu")
 
     if(menu.style.left = "0"){
         menu.style.left = "-460px"
         menu.style.transition = "1s ease all"
+        open_menu.style.visibility = "visible" 
     }
 })
 
