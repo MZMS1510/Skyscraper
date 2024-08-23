@@ -52,6 +52,7 @@ h1 {
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
+    max-height: 180px;
 }
 
 .noticia>section {
@@ -68,4 +69,10 @@ h1 {
 .date-category-container {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .noticia p {
+        overflow-y: scroll;
+    }
 }
