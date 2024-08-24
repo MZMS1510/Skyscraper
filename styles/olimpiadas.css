@@ -49,6 +49,7 @@ section {
 }
 
 .container-olimpiadas {
+    object-fit: cover;
     position: relative;
     text-align: right;
     height: auto;
