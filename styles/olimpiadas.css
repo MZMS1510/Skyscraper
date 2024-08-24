@@ -28,15 +28,15 @@ main {
 }
 
 section {
-    border: 1px solid red;
     position: relative;
     display: flex;
     justify-content: space-around;
     padding: 0 10vw;
     margin: auto;
-    width: 73vw;
+    width: 85vw;
     margin-top: 10px;
 }
+
 
 #container-texto {
     position: relative;
@@ -45,16 +45,14 @@ section {
     font-family: "Lexend Zetta", sans-serif;
     font-weight: bold;
     font-size: 25px;
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
 .container-olimpiadas {
-    border: 1px solid red;
     position: relative;
     text-align: right;
-    width: 60%;
     height: auto;
-    margin: auto;
+    margin: 0 20px;
     background-color: #a9a9a970;
     border-radius: 36px;
 }
