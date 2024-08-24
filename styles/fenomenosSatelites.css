@@ -130,22 +130,21 @@ nav{
 }
 
 #menu .link-menu {
-    color: black;
+    color: #fff;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
     height: 60px;
     padding: 20px 10px;
     box-sizing: border-box;
-    background-color: #FFFCFC;
+    background: none;
     text-decoration: none;
     border-radius: 5px;
 }
 
 #menu .link-menu:hover {
     text-decoration: underline;
-    text-decoration-color: #000000;
-    border: 1px solid #000000;
+    text-decoration-color: #fff;
 }
 
 #menu-universe {
@@ -421,7 +420,7 @@ h2{
   }
 
   #menu .link-menu{
-      color: #000000;
+      color: #fff;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       width: 80%;
       height: 30px;
