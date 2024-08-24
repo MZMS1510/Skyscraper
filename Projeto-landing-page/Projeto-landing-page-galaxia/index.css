@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+}
+
+
+
+#fundo{
+    background-image: url(imagens/página_home_noticias\ \(3\)-02\ \(1\).jpg);
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+body{
+    color: white;
+}
+
+h1{
+    line-height: 1.2;
+}
+
+p{
+    line-height: 1.5;
+}
+
+#botao{
+    padding-left: 16%;
+    padding-top: 35%;
+    position: fixed;
+}
+
+button{
+    padding: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 25px;
+    border: 3px solid white;
+    color: white;
+    background-color: black;
+    font-family: Saira;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 150%;
+}
+
+button:hover{
+    box-shadow: 0 0 15px #ffffff, inset 0 0 15px #ffffff;
+    text-shadow: 0 0 15px;
+}
+
+.saira{
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  #texto_1{
+    padding-top: 10%;
+    width: 33%;
+    position: relative;
+    padding-left: 16%;
+    font-size: 22px;
+    cursor:context-menu;
+    position: fixed;
+  }
+
+
+  .saira-second{
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+
+  @media (min-width: 100px) and (max-width: 440px) {   
+    #fundo{
+        background-image: url(imagens/página_home_noticias\ \(3\)-02.jpg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    h1{
+       font-size: 2rem;
+       text-align: center;
+       padding-top: 150px;
+    }
+    }
