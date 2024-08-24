@@ -40,7 +40,7 @@ main{
     width: 50%;
     height: 100vh;
     background-image: url(/images/frame-7.png);
-     background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
