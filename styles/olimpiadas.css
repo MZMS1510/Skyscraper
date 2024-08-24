@@ -28,15 +28,14 @@ main {
 }
 
 section {
+    border: 1px solid red;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 10vw;
     margin: auto;
-    width: 75vw;
+    width: 73vw;
     margin-top: 10px;
-    box-sizing: border-box;
 }
 
 #container-texto {
@@ -50,10 +49,12 @@ section {
 }
 
 .container-olimpiadas {
+    border: 1px solid red;
     position: relative;
     text-align: right;
-    width: 45%;
+    width: 60%;
     height: auto;
+    margin: auto;
     background-color: #a9a9a970;
     border-radius: 36px;
 }
