@@ -2,77 +2,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
+main {
     color: #fff;
 }
-#background-container{
+
+#background-container {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(/images/pagina-inicial-rodape.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    
+
 }
 
-section{
+section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    padding: 0px 290px 0px 290px;
+    width: 100vw;
+    margin-top: 10px;
     
 }
-#container-texto{
+
+#container-texto {
     text-align: center;
     font-family: "Lexend Zetta", sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    padding-top: 50px;
+    font-size: 25px;
+    padding-top: 70px;
 }
-.container-olimpiadas{
+
+.container-olimpiadas {
+    position: relative;
     text-align: right;
-    width: 30%;
-    margin: auto;
+    width: 25vw;
+    height: 70vh;
     background-color: #a9a9a970;
-    border-radius: 10px;
+    border-radius: 36px;
+
 
 }
 
-.container-olimpiadas img{
+.container-olimpiadas img {
     width: 100%;
-    height: 60%;
-    border-radius: 10px 10px 0px 0px;
+    height: 48vh;
+    border-radius: 36px 36px 0px 0px;
 }
-.container-olimpiadas h1{
+
+.container-olimpiadas h1 {
     font-family: "Saira", sans-serif;
     margin-top: 5px;
     margin-right: 30px;
 }
-.button{
+
+.button {
     display: inline-block;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: right;
-    margin-bottom: 30px;
-    margin-right: 30px;
     margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     color: #fff;
     border: 2px solid white;
-    padding: 4px 10px 4px 28px;
+    padding: 2px 5px 2px 28px;
     border-radius: 14px;
     text-decoration: none;
 }
 
-.button:hover{
+.button:hover {
     box-shadow: 0 0 15px #868686, inset 0 0 15px #868686;
     text-shadow: 0 0 15px ease-in-out;
-  }
+}
