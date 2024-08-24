@@ -52,12 +52,11 @@ section{
     background-color: #a9a9a970;
     border-radius: 36px;
     margin-top: 30px;
-}
-.container-influencer div{
-    padding: 1000px;
+    margin-left: 20px;
 }
 
 .container-influencer img{
+    object-fit: cover;
     width: 100%;
     height: 55vh;
     border-radius: 36px 36px 0px 0px;
