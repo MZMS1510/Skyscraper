@@ -10,7 +10,7 @@
 }
 
 #fundo{
-    background-image: url(imagens/página_notícias.png);
+    background-image: url(/images/pagina_notícias-galaxia.png);
     width: 100%;
     height: 45vh;
     position: absolute;
@@ -41,19 +41,12 @@ body{
 
 #div2{
     position: relative;
-    font-size: 45px;
+    font-size: 30px;
     padding-top: 25%;
     padding-left: 10%;
     padding-right: 5%;
     width: 45%;
     color: #120A66;
-}
-
-#borda1{
-    border: solid #120A66;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 0 0 15px;
 }
 
 
