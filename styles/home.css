@@ -26,6 +26,7 @@ main{
     z-index: -1;
     background-position-x: left;
 }
+
 nav{
     height: 20px;
 }
@@ -41,8 +42,8 @@ nav{
 }
 
 #menu {
-    background-color: #8e8e8e90;
     position: absolute;
+    background-color: #8e8e8e90;
     top: 0;
     left: -460px;
     display: flex;
@@ -72,8 +73,8 @@ nav{
   }
   
   #close-menu {
+    position: absolute;
       display: flex;
-      position: absolute;
       top: 10px;
       right: 10px;
       cursor: pointer;
@@ -114,8 +115,8 @@ nav{
 }
 
 #menu-universe {
-    background-color: #2012b668;
     position: absolute;
+    background-color: #2012b668;
     top: 0;
     left: -460px;
     display: flex;
@@ -321,6 +322,11 @@ p{
             font-size: 45px;
         }
 
+    #menu-universe{
+        height: 100vh;
+        padding-top: 0;
+    }
+
     #menu, #menu-universe{
         width: 100%;
         border-radius: 0px;
@@ -436,14 +442,13 @@ p{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 88.7vh;
-        padding-top: 40px;
+        height: 100vh;
+        padding-top: 0;
         gap: 5px;
         border-radius: 0 15px 15px 0;
     }
 
     #menu .link-menu{
-        color: #000000;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 80%;
         height: 30px;
@@ -456,7 +461,6 @@ p{
     }
 
     #menu-universe .link-menu{
-        color: #ffffff;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 80%;
         height: 30px;
