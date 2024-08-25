@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
-
-
-
-*{
+* {
     margin: 0%;
     border: 0%;
     padding: 0%;
 }
 
 
-#fundo{
+main {
+    color: #ffffff;
+    width: 100vw;
+    height: auto;
+}
+
+#fundo {
     background-image: url(/images/pagina-inicial-universo.png);
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     position: absolute;
     z-index: -1;
     background-size: cover;
@@ -22,30 +26,27 @@
     background-attachment: fixed;
 }
 
-
-
-body{
-    color: white;
+h1 {
+    font-size: 5vw;
+    width: 40vw;
 }
 
-h1{
-    line-height: 1.2;
-}
-
-p{
+p {
     line-height: 1.5;
 }
 
-#botao{
+#botao {
+    position: relative;
     padding-left: 4%;
-    padding-top: 22%;
-    position: fixed;
+    padding-top: 5%;
+    width: 10vw;
 }
 
-button{
+button {
+    position: relative;
     padding: 10px;
-    padding-left: 1%;
-    padding-right: 1%;
+    width: 150px;
+    font-size: 0.8rem;
     border-radius: 25px;
     border: 3px solid white;
     color: white;
@@ -54,38 +55,69 @@ button{
     background: transparent;
     cursor: pointer;
     transition: all 0.5s;
-    width: 150%;
+
 }
 
-button:hover{
+button:hover {
     box-shadow: 0 0 15px #ffffff, inset 0 0 15px #ffffff;
     text-shadow: 0 0 15px ease-in-out;
 }
 
-.saira{
-    font-family: "Saira", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-variation-settings:
-      "wdth" 100;
-  }
-
-  #texto_1{
-    padding-top: 6%;
-    width: 35%;
+.titulo {
     position: relative;
+    margin: auto;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-variation-settings: "wdth" 100;
+}
+
+#texto_1 {
+    position: relative;
+    padding-top: 10%;
+    width: 40%;
     padding-left: 4%;
     font-size: 23px;
-    cursor:context-menu;
-    position: fixed;
-  }
+    cursor: context-menu;
+}
 
 
-  .saira-second{
+.saira-second {
+    width: 30vw;
+    font-size: 1.9vw;
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+    font-variation-settings: "wdth" 100;
+}
+
+@media only screen and (min-width:100px) and (max-width: 450px) {
+    .titulo {
+        padding-top: 50%;
+        padding-left: 20%;
+        font-size: 7vw;
+        width: 80vw;
+    }
+
+    .saira-second {
+        position: relative;
+        width: 50vw;
+        padding-left: 20%;
+        font-size: 3vw;
+    }
+
+    #botao {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+
+    button {
+        padding: 10px;
+        width: 130px;
+        font-size: 0.6rem;
+    }
+}
