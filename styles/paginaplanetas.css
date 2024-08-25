@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#fundo{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+}
+
+#fotos{
+    margin-top: 150px;
+    position: relative;
+}
+
+
+#terra{
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    z-index: 1;
+    width: 280px;
+    height: 280px;
+}
+
+#terrablur{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    z-index: 0;
+}
+
+#texto{
+    margin-left: 50px;
+    margin-top: 150px;
+    text-align: left;
+}
+
+h1{
+    font-family: "lexend zetta";
+    color: white;
+    font-size: xx-large;
+}
+
+p{
+    position: relative;
+    font-family: "Inter";
+    color: white;
+    margin-top: 20px;
+    line-height: 28px;
+    font-size: large;
+    z-index: 2;
+}
