@@ -1,7 +1,7 @@
 footer {
-    width: 100vw;
-    height: 90vh;
-    background-color: transparent;
+    width: 100%;
+    height: auto;
+    background-color: black;
     color: #DDD;
     font-family: "Lexend Zetta", Arial, Helvetica, sans-serif;
 }

@@ -130,22 +130,20 @@ nav{
 }
 
 #menu .link-menu {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
     height: 60px;
     padding: 20px 10px;
     box-sizing: border-box;
-    background-color: #FFFCFC;
     text-decoration: none;
     border-radius: 5px;
 }
 
 #menu .link-menu:hover {
     text-decoration: underline;
-    text-decoration-color: #000000;
-    border: 1px solid #000000;
+    text-decoration-color: #ffffff;
 }
 
 #menu-universe {
@@ -188,7 +186,7 @@ nav{
 }
 
 #menu-universe .link-menu {
-    color: #fffdfd;
+    color: #fffdfdd3;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -262,10 +260,6 @@ nav{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  .poppins-light-a:hover{
-    box-shadow: 0 0 15px #868686, inset 0 0 15px #868686;
-    text-shadow: 0 0 15px ease-in-out;
   }
 
   .poppins-light-p {
