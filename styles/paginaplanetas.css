@@ -1,15 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
-*{
+* {
     border: 0px;
     margin: 0px;
     padding: 0px;
 }
 
-#fundo{
-    position: absolute;
+#fundo {
+    position: fixed;
     background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,14 +17,14 @@
     z-index: -1;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 15vh;
 }
 
-#container-side-bar{
+#container-side-bar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -51,7 +50,7 @@ nav{
     z-index: 2;
 }
 
-#open-menu{
+#open-menu {
     position: fixed;
     background: none;
     border: none;
@@ -61,36 +60,37 @@ nav{
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-  }
-  
-  #close-menu {
-      display: flex;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      border: none;
-      border-radius: 50%;
-      background-color: #ffffff;
-      padding: 2px;
-  }
-  
-  #close-menu:hover{
-      background-color: #000000;
-  }
-  
-  #close{
-      color: #000000;
-  }
-  
-  #close:hover{
-      color: #ffffff;
-  }
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+#close-menu {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+#close-menu:hover {
+    background-color: #000000;
+}
+
+#close {
+    color: #000000;
+}
+
+#close:hover {
+    color: #ffffff;
+}
+
 #menu .link-menu {
     color: #fff;
     text-align: start;
@@ -166,40 +166,40 @@ nav{
     text-decoration-color: #ffffff;
 }
 
-.material-symbols-outlined.tm32{
+.material-symbols-outlined.tm32 {
     font-size: 45px;
 }
 
 .material-symbols-outlined.openMenu {
     font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48;
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
     color: #ffffff;
-  }
+}
 
 .material-symbols-outlined {
     font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48;
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
     color: #FFFCFC;
-  }
+}
 
-#principal{
+#principal {
     display: flex;
     justify-content: center;
 }
 
-#fotos{
+#fotos {
     margin-top: 50px;
     position: relative;
 }
 
 
-#terra{
+#terra {
     position: absolute;
     top: 80px;
     left: 120px;
@@ -208,26 +208,26 @@ nav{
     height: 280px;
 }
 
-#terrablur{
+#terrablur {
     position: relative;
     width: 300px;
     height: 300px;
     z-index: 0;
 }
 
-#texto{
+#texto {
     margin-left: 50px;
     margin-top: 40px;
     text-align: left;
 }
 
-h1{
+h1 {
     font-family: "lexend zetta";
     color: white;
     font-size: xx-large;
 }
 
-p{
+p {
     position: relative;
     font-family: "Inter";
     color: white;
