@@ -20,26 +20,26 @@ main{
 #background-container{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: auto;
     z-index: -1;
 }
 
-#background-estrelas{
+#background-fenomenos{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(/images/frame-5.png);
+    background-image: url(/images/frame-fenomenos.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
 }
 
-#background-constelacao{
+#background-satelites{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(/images/frame-4.png);
+    background-image: url(/images/frame-satelites.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,13 +137,14 @@ nav{
     height: 60px;
     padding: 20px 10px;
     box-sizing: border-box;
+    background: none;
     text-decoration: none;
     border-radius: 5px;
 }
 
 #menu .link-menu:hover {
     text-decoration: underline;
-    text-decoration-color: #ffffff;
+    text-decoration-color: #fff;
 }
 
 #menu-universe {
@@ -266,8 +267,7 @@ nav{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #ffffff;  
-    }
+  }
 
   #secao1, #secao2{
     display: flex;
@@ -286,7 +286,7 @@ nav{
 }
 
 #title1, #title2{
-    margin-right: 50px;
+    text-align: right;
 }
 
 h1{
@@ -340,11 +340,6 @@ h2{
         font-size: 45px;
     }
 
-    #menu-universe{
-        height: 100vh;
-        padding-top: o;
-    }
-
     #menu, #menu-universe{
         width: 100%;
         border-radius: 0px;
@@ -354,7 +349,7 @@ h2{
             height: 100vh;
     }
 
-    #background-estrelas, #background-constelacao{
+    #background-satelites, #background-fenomenos{
         width: 100%;
         height: 50vh;
         clear: left;
@@ -374,8 +369,9 @@ h2{
 
 
     .container-text{
-        height: 8vh;
-        font-size: 0.5rem;
+        width: 80%;
+        height: 15vh;
+        font-size: 0.7rem;
     }
 
     .container-saiba-mais a{
@@ -403,7 +399,7 @@ h2{
       align-items: center;
       flex-direction: column;
       width: 40%;
-      padding-top: 0;
+      padding-top: 15px;
       gap: 10px;
       border-radius: 0 15px 15px 0;
   }
@@ -462,7 +458,9 @@ h2{
 
 
 .container-text{
-    font-size: 0.5rem;
+    width: 80%;
+    height: 25vh;
+    font-size: 0.7rem;
 }
 
 .container-saiba-mais a{
