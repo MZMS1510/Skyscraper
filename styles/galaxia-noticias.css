@@ -236,3 +236,10 @@ p{
     }
 
 }
+
+/* Responsividade Tablet*/
+
+@media only screen and (min-width: 451px) and (max-width: 980px){
+    
+
+}
