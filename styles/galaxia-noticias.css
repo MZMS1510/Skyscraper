@@ -219,6 +219,8 @@ p{
     padding-top: 30px;
 }
 
+/* Responsividade Mobile*/
+
 @media only screen and (min-width:100px) and (max-width: 450px) {
     #fundo{
         width: 100%;
@@ -240,6 +242,23 @@ p{
 /* Responsividade Tablet*/
 
 @media only screen and (min-width: 451px) and (max-width: 980px){
+    #container{
+        width: 70%;
+    }
     
+    #fundo{
+        height: 200px;
+    }
 
+    h1{
+        font-size: 4vw;
+        padding-top: 20px;
+    }
+    h3{
+        font-size: 2vw;
+        padding-top: 15px
+    }
+    p{
+        padding-top: 30px;
+    }
 }
