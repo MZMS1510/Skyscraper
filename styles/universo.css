@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
-
-
-
-*{
+* {
     margin: 0%;
     border: 0%;
     padding: 0%;
 }
 
 
-#fundo{
+main {
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+#fundo {
     background-image: url(/images/pagina-inicial-universo.png);
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     position: absolute;
     z-index: -1;
     background-size: cover;
@@ -22,30 +26,197 @@
     background-attachment: fixed;
 }
 
-
-
-body{
-    color: white;
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
 }
 
-h1{
-    line-height: 1.2;
+#container-side-bar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 15vh;
+    margin-left: 5%;
+    gap: 45%;
 }
 
-p{
+#menu {
+    position: fixed;
+    background-color: #8e8e8eeb;
+    top: 0;
+    left: -460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    gap: 20px;
+    border-radius: 0 15px 15px 0;
+    z-index: 2;
+}
+
+#open-menu{
+    position: fixed;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  #close-menu {
+      display: flex;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      border: none;
+      border-radius: 50%;
+      background-color: #ffffff;
+      padding: 2px;
+  }
+  
+  #close-menu:hover{
+      background-color: #000000;
+  }
+  
+  #close{
+      color: #000000;
+  }
+  
+  #close:hover{
+      color: #ffffff;
+  }
+#menu .link-menu {
+    color: #fff;
+    text-align: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    height: 60px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background-color: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#menu .link-menu:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+#menu-universe {
+    background-color: #2012b6c2;
+    position: fixed;
+    top: 0;
+    left: -460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    padding-top: 40px;
+    gap: 10px;
+    border-radius: 0 15px 15px 0;
+    z-index: 2;
+}
+
+
+#menu-universe #close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: #ffffff;
+}
+
+#menu-universe #close-menu:hover {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+#menu-universe .link-menu {
+    color: #fffdfde2;
+    text-align: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    height: 60px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#menu-universe .link-menu:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.material-symbols-outlined.tm32{
+    font-size: 45px;
+}
+
+.material-symbols-outlined.openMenu {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+    color: #ffffff;
+  }
+
+.material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48;
+    color: #FFFCFC;
+  }
+
+h1 {
+    font-size: 5vw;
+    width: 40vw;
+}
+
+p {
     line-height: 1.5;
 }
 
-#botao{
+#botao {
+    position: relative;
     padding-left: 4%;
-    padding-top: 22%;
-    position: fixed;
+    padding-top: 5%;
+    width: 10vw;
 }
 
-button{
+#botao button {
+    position: relative;
     padding: 10px;
-    padding-left: 1%;
-    padding-right: 1%;
+    width: 150px;
+    font-size: 0.8rem;
     border-radius: 25px;
     border: 3px solid white;
     color: white;
@@ -54,38 +225,69 @@ button{
     background: transparent;
     cursor: pointer;
     transition: all 0.5s;
-    width: 150%;
+
 }
 
-button:hover{
+#botao button:hover {
     box-shadow: 0 0 15px #ffffff, inset 0 0 15px #ffffff;
     text-shadow: 0 0 15px ease-in-out;
 }
 
-.saira{
-    font-family: "Saira", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-variation-settings:
-      "wdth" 100;
-  }
-
-  #texto_1{
-    padding-top: 6%;
-    width: 35%;
+.titulo {
     position: relative;
+    margin: auto;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-variation-settings: "wdth" 100;
+}
+
+#texto_1 {
+    position: relative;
+    padding-top: 5%;
+    width: 40%;
     padding-left: 4%;
     font-size: 23px;
-    cursor:context-menu;
-    position: fixed;
-  }
+    cursor: context-menu;
+}
 
 
-  .saira-second{
+.saira-second {
+    width: 30vw;
+    font-size: 1.9vw;
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+    font-variation-settings: "wdth" 100;
+}
+
+@media only screen and (min-width:100px) and (max-width: 450px) {
+    .titulo {
+        padding-top: 40%;
+        padding-left: 20%;
+        font-size: 7vw;
+        width: 80vw;
+    }
+
+    .saira-second {
+        position: relative;
+        width: 50vw;
+        padding-left: 20%;
+        font-size: 3vw;
+    }
+
+    #botao {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+
+    button {
+        padding: 10px;
+        width: 130px;
+        font-size: 0.6rem;
+    }
+}

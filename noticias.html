@@ -7,14 +7,44 @@
     <title>Skyscraper - Noticias</title>
     <link rel="stylesheet" href="styles/noticias.css">
     <link rel="stylesheet" href="styles/rodape.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 </head>
 
 <body>
+
+    <header id="container-side-bar">
+        <nav>
+            <button id="open-menu" ><span class="material-symbols-outlined openMenu tm32">menu</span></button>
+            
+            <div id="menu">
+                <div class="poppins-light-a" id="close-menu"><span class="material-symbols-outlined" id="close">close</span></div>
+                <a class="link-menu poppins-light-a" href="#">Home</a>
+                <a class="link-menu poppins-light-a" href="#">Sobre Nós</a>
+                <a class="link-menu poppins-light-a" href="/noticias.html">Notícias</a>
+                <a class="link-menu poppins-light-a" href="#">Influencers</a>
+                <a class="link-menu poppins-light-a" href="#">Olimpiadas</a>
+                <a class="link-menu poppins-light-a" id="open-universe" href="#">Universo +</a>
+                <a class="link-menu poppins-light-a" href="#">Contato</a>
+              </div>
+
+            <div id="menu-universe">
+                <a class="link-menu poppins-light-a" href="#">Home</a>
+                <a class="link-menu poppins-light-a" id="close-universe" href="#">Universo -</a>
+                <a class="link-menu poppins-light-a" href="#">Planetas</a>
+                <a class="link-menu poppins-light-a" href="#">Galáxias</a>
+                <a class="link-menu poppins-light-a" href="#">Estrelas</a>
+                <a class="link-menu poppins-light-a" href="#">Constelações</a>
+                <a class="link-menu poppins-light-a" href="/fenomenosSatelites.html">Satélites</a>
+                <a class="link-menu poppins-light-a" href="/fenomenosSatelites.html">Fenômenos</a>
+              </div>
+        </nav>
+    </header>
+
     <h1>Noticias</h1>
 
     <section class="noticias">
         <div class="noticia">
-            <img src="images/frame-4.png" alt="formação da aurora boreal">
+            <img src="images/pagina_noticias.jpg" alt="formação da aurora boreal">
             <section>
                 <p>Astronauta faz registro de formação da Aurora Boreal</p>
                 <div class="date-category-container">
@@ -22,12 +52,12 @@
                     <span>Fenômenos</span>
                 </div>
                 <br>
-                <a href="#">SAIBA MAIS ></a>
+                <a href="#" class="learn-more">SAIBA MAIS ></a>
             </section>
         </div>
 
         <div class="noticia">
-            <img src="images/frame-3.png" alt="astronauta preso no espaço">
+            <img src="images/pexels-pixabay-2152.jpg" alt="astronauta preso no espaço">
             <section>
                 <p>Ainda sem data, astrounatas preso no espaço podem retornar a terra em voo da SpaceX</p>
                 <div class="date-category-container">
@@ -35,12 +65,12 @@
                     <span>Universos</span>
                 </div>
                 <br>
-                <a href="#">SAIBA MAIS ></a>
+                <a href="#" class="learn-more">SAIBA MAIS ></a>
             </section>
         </div>
 
         <div class="noticia">
-            <img src="images/frame-1.png" alt="astronauta preso no espaço">
+            <img src="images/pexels-pixabay-2152.jpg" alt="astronauta preso no espaço">
             <section>
                 <p>Ainda sem data, astrounatas preso no espaço podem retornar a terra em voo da SpaceX</p>
                 <div class="date-category-container">
@@ -48,12 +78,12 @@
                     <span>Universos</span>
                 </div>
                 <br>
-                <a href="#">SAIBA MAIS ></a>
+                <a href="#" class="learn-more">SAIBA MAIS ></a>
             </section>
         </div>
 
         <div class="noticia">
-            <img src="images/frame-7.png" alt="formação da aurora boreal">
+            <img src="images/pagina_noticias.jpg" alt="formação da aurora boreal">
             <section>
                 <p>Astronauta faz registro de formação da Aurora Boreal</p>
                 <div class="date-category-container">
@@ -61,7 +91,7 @@
                     <span>Fenômenos</span>
                 </div>
                 <br>
-                <a href="#">SAIBA MAIS ></a>
+                <a href="#" class="learn-more">SAIBA MAIS ></a>
             </section>
         </div>
     </section>
@@ -74,10 +104,10 @@
             <section>
                 <p>Entre em contato</p>
                 <div class="social-media-container">
-                    <img src="#" alt="linkedin">
-                    <img src="#" alt="facebook">
-                    <img src="#" alt="instagram">
-                    <img src="#" alt="youtube">
+                    <img src="images/entypo-social_linkedin-with-circle.png" alt="linkedin">
+                    <img src="images/entypo-social_facebook-with-circle.png" alt="facebook">
+                    <img src="images/entypo-social_instagram-with-circle.png" alt="instagram">
+                    <img src="images/entypo-social_youtube-with-circle.png" alt="youtube">
                 </div>
             </section>
             <section>
@@ -89,5 +119,5 @@
         <div class="rights">Todos os direitos reservados</div>
     </footer>
 </body>
-
+<script src="/js/menu.js"></script>
 </html>

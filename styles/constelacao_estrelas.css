@@ -28,7 +28,7 @@ main{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(/images/frame-5.png);
+    background-image: url(/images/frame-constelaçoes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@ main{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(/images/frame-4.png);
+    background-image: url(/images/frame-estrelas.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,22 +130,20 @@ nav{
 }
 
 #menu .link-menu {
-    color: black;
+    color: #fff;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
     height: 60px;
     padding: 20px 10px;
     box-sizing: border-box;
-    background-color: #FFFCFC;
     text-decoration: none;
     border-radius: 5px;
 }
 
 #menu .link-menu:hover {
     text-decoration: underline;
-    text-decoration-color: #000000;
-    border: 1px solid #000000;
+    text-decoration-color: #ffffff;
 }
 
 #menu-universe {
@@ -188,7 +186,7 @@ nav{
 }
 
 #menu-universe .link-menu {
-    color: #fffdfd;
+    color: #fffdfdb7;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -262,10 +260,6 @@ nav{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  .poppins-light-a:hover{
-    box-shadow: 0 0 15px #868686, inset 0 0 15px #868686;
-    text-shadow: 0 0 15px ease-in-out;
   }
 
   .poppins-light-p {
@@ -346,6 +340,11 @@ h2{
         font-size: 45px;
     }
 
+    #menu-universe{
+        height: 100vh;
+        padding-top: o;
+    }
+
     #menu, #menu-universe{
         width: 100%;
         border-radius: 0px;
@@ -398,13 +397,13 @@ h2{
         position: absolute;
         top: 0;
         left: -460px;
-        height: 96.2%;
+        height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       width: 40%;
-      padding-top: 15px;
+      padding-top: 0;
       gap: 10px;
       border-radius: 0 15px 15px 0;
   }
@@ -419,14 +418,13 @@ h2{
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      height: 88.7vh;
-      padding-top: 40px;
+      height: 100vh;
+      padding-top: 0;
       gap: 5px;
       border-radius: 0 15px 15px 0;
   }
 
   #menu .link-menu{
-      color: #000000;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       width: 80%;
       height: 30px;
@@ -439,7 +437,6 @@ h2{
   }
 
   #menu-universe .link-menu{
-      color: #ffffff;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       width: 80%;
       height: 30px;
