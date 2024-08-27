@@ -41,7 +41,7 @@ nav{
     justify-content: flex-start;
     align-items: center;
     width: 70%;
-    height: 15vh;
+    height: 7vh;
     margin-left: 5%;
     gap: 45%;
 }
@@ -213,12 +213,10 @@ section {
 
 #container-texto {
     position: relative;
-    max-width: 100%;
     text-align: center;
     font-family: "Lexend Zetta", sans-serif;
     font-weight: bold;
-    font-size: 25px;
-    padding-top: 10px;
+    font-size: 2vw;
 }
 
 .container-olimpiadas {
@@ -264,4 +262,28 @@ section {
 .button:hover {
     box-shadow: 0 0 15px #868686, inset 0 0 15px #868686;
     text-shadow: 0 0 15px ease-in-out;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 480px){
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    #container-texto{
+        font-size: 3vw;
+    }
+    .container-olimpiadas{
+        margin-top: 10px;
+    }
+    .container-olimpiadas h1{        
+        font-size: 4vw;
+    }
+    .button{
+        font-size: 2.4vw;
+        margin: 15px;
+        
+    }
+
 }

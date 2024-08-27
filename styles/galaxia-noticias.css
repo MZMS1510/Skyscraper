@@ -221,7 +221,7 @@ p{
 
 /* Responsividade Mobile*/
 
-@media only screen and (min-width:100px) and (max-width: 450px) {
+@media only screen and (min-width:100px) and (max-width: 480px) {
     #fundo{
         width: 100%;
         height: 269px;
@@ -241,7 +241,7 @@ p{
 
 /* Responsividade Tablet*/
 
-@media only screen and (min-width: 451px) and (max-width: 980px){
+@media only screen and (min-width: 500px) and (max-width: 980px){
     #container{
         width: 70%;
     }
