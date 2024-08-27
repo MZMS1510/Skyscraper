@@ -212,6 +212,7 @@ p{
     height: 70vh;
     margin-top: 20px;
     margin-left: 200px;
+    border: 1px solid green;
 
 }
 #botao{
@@ -254,6 +255,7 @@ p{
 
 
   .saira-second{
+    border: 1px solid red;
     margin-top: 10px;
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
