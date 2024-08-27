@@ -28,7 +28,7 @@ nav{
 
 #menu {
     position: fixed;
-    background-color: #8e8e8e90;
+    background-color: #8e8e8eef;
     top: 0;
     left: -460px;
     display: flex;
@@ -101,7 +101,7 @@ nav{
 }
 
 #menu-universe {
-    background-color: #2012b668;
+    background-color: #2012b6ab;
     position: fixed;
     top: 0;
     left: -460px;
@@ -262,6 +262,29 @@ p{
 
 
 @media (min-width: 100px) and (max-width: 440px) {   
+
+    #container-side-bar{
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #open-menu{
+        padding-left: 30px;
+    }
+    
+    .material-symbols-outlined.tm32{
+        font-size: 45px;
+    }
+
+    #menu, #menu-universe{
+        width: 100%;
+        border-radius: 0px;
+        }
+        
+        #container-section{
+            height: 100vh;
+    }
+
 #fundo{
     background-image: url(/images/pagina-inicial-lua-responsivo.jpg);
     width: 100%;
@@ -276,5 +299,83 @@ p{
 h1{
    font-size: 30px;
    padding-top: 200px;
+}
+}
+
+@media (min-width: 500px) and (max-width: 980px) {   
+
+    #menu {
+        background-color: #8e8e8e90;
+          position: fixed;
+          top: 0;
+          left: -460px;
+          height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        padding-top: 0;
+        gap: 10px;
+        border-radius: 0 15px 15px 0;
+    }
+  
+    #menu-universe{
+        background-color: #2012b668;
+        position: fixed;
+        top: 0;
+        left: -460px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 0;
+        gap: 5px;
+        border-radius: 0 15px 15px 0;
+    }
+  
+    #menu .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #menu-universe .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #container-side-bar{
+        gap: 0px;
+    }
+
+
+
+h1{
+   font-size: 20px;
+   padding-top: 0;
+}
+
+#texto_1{
+    padding-top: 25px;
+}
+
+#botao{
+    padding-top: 25%;
 }
 }

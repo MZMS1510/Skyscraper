@@ -263,6 +263,28 @@ p {
 }
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
+    #container-side-bar{
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #open-menu{
+        padding-left: 30px;
+    }
+    
+    .material-symbols-outlined.tm32{
+        font-size: 45px;
+    }
+
+    #menu, #menu-universe{
+        width: 100%;
+        border-radius: 0px;
+        }
+        
+        #container-section{
+            height: 100vh;
+    }
+
     .titulo {
         padding-top: 40%;
         padding-left: 20%;
@@ -289,5 +311,36 @@ p {
         padding: 10px;
         width: 130px;
         font-size: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 980px){
+
+    #menu .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #menu-universe .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #container-side-bar{
+        gap: 0px;
     }
 }
