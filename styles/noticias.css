@@ -44,6 +44,7 @@ nav{
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 
@@ -192,15 +193,14 @@ body {
 }
 
 h1 {
+    font-size: 4vw;
     position: absolute;
-    top: 45px;
-    text-align: center;
+    top: 35px;
     width: 100%;
+    text-align: center;
 }
 
 .learn-more {
-    position: absolute;
-    top: 260px;
     padding: 10px;
     border-radius: 25px;
     border: 3px solid white;
@@ -226,7 +226,7 @@ h1 {
 .noticia {
     margin: 30px;
     width: 500px;
-    height: 550px;
+    height: 500px;
     border-radius: 36px;
     backdrop-filter: blur(20px);
     font-family: "Saira";
