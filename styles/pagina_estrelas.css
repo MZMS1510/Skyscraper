@@ -202,9 +202,11 @@ main{
 #principal {
     display: flex;
     justify-content: center;
+    width: 60%;
 }
 
 #fotos {
+    margin-top: 50px;
     position: relative;
 }
 
@@ -222,15 +224,13 @@ main{
     position: relative;
     width: 300px; /*testar tamanho para se adequar a tela*/
     height: 300px; /*testar tamanho para se adequar a tela*/
+    z-index: 0;
 }
 
 #texto {
     margin-left: 5vw;
     margin-top: 2vh;
     text-align: left;
-    color: white;
-    z-index: 2;
-    font-family: "Inter";
 }
 
 h1 {
@@ -261,10 +261,17 @@ p {
         height: 100vh;
     }
 
+    #texto {
+        margin-left: 50px;
+        margin-top: 40px;
+        text-align: left;
+    }  
+
     #principal {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     #fotos {
