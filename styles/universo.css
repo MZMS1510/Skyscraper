@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+.lexend-zetta-a {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
 
 * {
     margin: 0%;
@@ -45,7 +53,7 @@ nav{
 
 #menu {
     position: fixed;
-    background-color: #8e8e8e90;
+    background-color: #ffffff;
     top: 0;
     left: -460px;
     display: flex;
@@ -57,6 +65,7 @@ nav{
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
+    opacity: 80%;
 }
 
 #open-menu{
@@ -100,7 +109,7 @@ nav{
       color: #ffffff;
   }
 #menu .link-menu {
-    color: #fff;
+    color: #000000;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -110,6 +119,7 @@ nav{
     background-color: none;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -118,7 +128,7 @@ nav{
 }
 
 #menu-universe {
-    background-color: #2012b668;
+    background-color: #2012b6ab;
     position: fixed;
     top: 0;
     left: -460px;
@@ -310,7 +320,6 @@ p {
 
 @media screen and (min-width: 500px) and (max-width: 980px) {
     #menu {
-        background-color: #8e8e8e90;
           position: absolute;
           top: 0;
           left: -460px;
@@ -325,7 +334,6 @@ p {
     }
   
     #menu-universe{
-        background-color: #2012b668;
         position: absolute;
         top: 0;
         left: -460px;
