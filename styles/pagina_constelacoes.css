@@ -213,6 +213,10 @@ nav {
     color: #FFFCFC;
 }
 
+body{
+    width: 100vw;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -222,6 +226,7 @@ main{
 #principal {
     display: flex;
     justify-content: center;
+    width: 60%;
 }
 
 #fotos {
@@ -249,9 +254,7 @@ main{
     margin-left: 5vw;
     margin-top: 5vh;
     text-align: left;
-    color: white;
     z-index: 2;
-    font-family: "Inter";
 }
 
 h1 {
@@ -273,7 +276,7 @@ p {
 @media only screen and (min-width:100px) and (max-width: 450px) {
 
     body{
-        height: 245vh;
+        height: 250vh;
     }
 
     #fundo {
@@ -288,6 +291,7 @@ p {
     }
 
     #principal {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
