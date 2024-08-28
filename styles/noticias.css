@@ -193,14 +193,32 @@ body {
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 4em;
     position: absolute;
     top: 20px;
     width: 100%;
     text-align: center;
 }
 
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.noticia {
+    margin: 30px;
+    width: 500px;
+    height: 550px;
+    border-radius: 36px;
+    backdrop-filter: blur(20px);
+    font-family: "Saira";
+}
+
+
 .learn-more {
+    position: absolute;
+    top: 280px;
     padding: 10px;
     border-radius: 25px;
     border: 3px solid white;
@@ -217,21 +235,6 @@ h1 {
     text-shadow: 0 0 15px;
 }
 
-.noticias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.noticia {
-    margin: 30px;
-    width: 500px;
-    height: 500px;
-    border-radius: 36px;
-    backdrop-filter: blur(20px);
-    font-family: "Saira";
-}
-
 .noticia img {
     object-fit: cover;
     border-radius: 36px 36px 0px 0px;
@@ -243,6 +246,7 @@ h1 {
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
+    min-height: 160px;
     max-height: 180px;
 }
 
@@ -265,6 +269,10 @@ h1 {
 @media screen and (max-width: 480px) {
     .noticia p {
         overflow-y: scroll;
+    }
+
+    h1 {
+        font-size: 3em;
     }
 
     #container-side-bar{

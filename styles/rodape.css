@@ -50,14 +50,14 @@ footer {
 }
 
 .social-media-container>img {
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 .rights {
-    bottom: 20px;
-    position: relative;
-    margin: auto;
+    position: absolute;
+    width: 100%;
     text-align: center;
+    font-size: 10px;
 }
 
 @media screen and (max-width: 1200px) {
