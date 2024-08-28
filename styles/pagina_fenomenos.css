@@ -203,9 +203,11 @@ main{
 #principal {
     display: flex;
     justify-content: center;
+    width: 60%;
 }
 
 #fotos {
+    margin-top: 50px;
     position: relative;
 }
 
@@ -229,9 +231,7 @@ main{
     margin-left: 12vw;
     margin-top: 2vh;
     text-align: left;
-    color: white;
     z-index: 2;
-    font-family: "Inter";
 }
 
 h1 {
