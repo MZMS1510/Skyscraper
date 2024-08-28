@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
+::-webkit-scrollbar {
+    display: flex;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e7e7e7;
+  }
+
 .lexend-zetta-a {
     font-family: "Lexend Zetta", sans-serif;
     font-optical-sizing: auto;
@@ -315,6 +329,10 @@ p {
         padding: 10px;
         width: 130px;
         font-size: 0.6rem;
+    }
+
+    #open-menu{
+        margin-left: 10%;
     }
 }
 

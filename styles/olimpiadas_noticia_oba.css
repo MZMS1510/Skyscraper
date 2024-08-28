@@ -33,7 +33,7 @@ nav {
 
 #menu {
     position: fixed;
-    background-color: #ffffff;
+    background-color: #e6e6e6;
     top: 0;
     left: -460px;
     display: flex;
@@ -118,7 +118,7 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 25%;
-    height: 94vh;
+    height: 100vh;
     padding-top: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
@@ -186,7 +186,7 @@ nav {
         'wght' 400,
         'GRAD' 0,
         'opsz' 48;
-    color: #FFFCFC;
+    color: #000000;
 }
 
 #fundo {
