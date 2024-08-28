@@ -203,6 +203,10 @@ nav {
     color: #FFFCFC;
 }
 
+body{
+    width: 100vw;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -260,6 +264,11 @@ p {
 }
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
+
+    
+    body{
+        height: 245vh;
+    }
 
     #fundo {
         width: 100%;
