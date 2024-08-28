@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
 ::-webkit-scrollbar {
     display: flex;
@@ -212,6 +213,9 @@ nav {
     color: #FFFCFC;
 }
 
+body{
+    width: 100vw;
+}
 
 main{
     display: flex;
@@ -230,27 +234,27 @@ main{
     position: relative;
 }
 
-#terra {
+
+#constelacao {
     position: absolute;
     top: 80px;
-    left: 80px;
+    left: 120px;
     z-index: 1;
-    width: 280px; /*testar tamanho para se adequar a tela*/
-    height: 320px; /*testar tamanho para se adequar a tela*/
-    border-radius: 36px;
+    width: 260px; /*testar tamanho para se adequar a tela*/
+    /*testar tamanho para se adequar a tela*/
 }
 
-#terrablur {
+#constelacao_blur {
     position: relative;
     width: 300px; /*testar tamanho para se adequar a tela*/
-    height: 260px; /*testar tamanho para se adequar a tela*/
-    z-index: 0;
+    height: 300px; /*testar tamanho para se adequar a tela*/
 }
 
 #texto {
     margin-left: 5vw;
     margin-top: 5vh;
     text-align: left;
+    z-index: 2;
 }
 
 h1 {
@@ -263,7 +267,7 @@ p {
     position: relative;
     font-family: "Inter";
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 28px;
     font-size: large;
     z-index: 2;
@@ -272,7 +276,7 @@ p {
 @media only screen and (min-width:100px) and (max-width: 450px) {
 
     body{
-        height: 245vh;
+        height: 250vh;
     }
 
     #fundo {
@@ -287,10 +291,10 @@ p {
     }
 
     #principal {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
     }
 
     #fotos {
@@ -300,20 +304,20 @@ p {
         justify-content: center;
     }
 
-    #terra {
-        top: 60px;
+    #constelacao {
+        top: 40px;
         width: 220px; /*testar tamanho para se adequar a tela*/
-        height: 220px; /*testar tamanho para se adequar a tela*/
+        height: 280px; /*testar tamanho para se adequar a tela*/
     }
     
-    #terrablur {
+    #constelacao_blur {
         width: 250px; /*testar tamanho para se adequar a tela*/
         height: 220px; /*testar tamanho para se adequar a tela*/
     }
 
     #texto{
         margin-left: 10vw;
-        margin-top: 10vh;
+        margin-top: 12vh;
         margin-right: 10vw;
         text-align: left;
     }
