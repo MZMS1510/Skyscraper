@@ -43,7 +43,7 @@ nav{
 
 #menu {
     position: absolute;
-    background-color: #8e8e8e90;
+    background-color: #fff;
     top: 0;
     left: -460px;
     display: flex;
@@ -55,6 +55,7 @@ nav{
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
+    opacity: 80%;
 }
 
 #open-menu{
@@ -97,7 +98,7 @@ nav{
       color: #ffffff;
   }
 #menu .link-menu {
-    color: #fff;
+    color: #000000;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -107,6 +108,7 @@ nav{
     background-color: none;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -252,6 +254,13 @@ p{
     font-family: "Lexend Zetta", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
+    font-style: normal;
+  }
+
+.lexend-zetta-a {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
     font-style: normal;
   }
 
@@ -428,7 +437,6 @@ p{
 @media only screen and (min-width: 500px) and (max-width: 980px) {
 
     #menu {
-        background-color: #8e8e8e90;
         position: absolute;
         top: 0;
         left: -460px;
@@ -444,7 +452,6 @@ p{
     }
 
     #menu-universe{
-        background-color: #2012b668;
         position: absolute;
         top: 0;
         left: -460px;

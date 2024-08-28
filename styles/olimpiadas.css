@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
+.lexend-zetta-a {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -33,22 +40,22 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 7vh;
 }
 
 #container-side-bar{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     width: 70%;
-    height: 7vh;
+    height: 10vh;
     margin-left: 5%;
     gap: 45%;
 }
 
 #menu {
     position: fixed;
-    background-color: #8e8e8e90;
+    background-color: #e9e9e9;
     top: 0;
     left: -460px;
     display: flex;
@@ -60,10 +67,11 @@ nav{
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
+    opacity: 94%;
 }
 
 #open-menu{
-    position: fixed;
+    position: absolute;
     background: none;
     border: none;
     cursor: pointer;
@@ -103,7 +111,7 @@ nav{
       color: #ffffff;
   }
 #menu .link-menu {
-    color: #fff;
+    color: #000000;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -113,6 +121,7 @@ nav{
     background-color: none;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -206,7 +215,7 @@ section {
     justify-content: space-around;
     padding: 0 10vw;
     margin: auto;
-    width: 85vw;
+    width: 80vw;
     margin-top: 10px;
 }
 
@@ -306,7 +315,6 @@ section {
 @media only screen and (min-width:500px) and (max-width: 980px) {
     
     #menu {
-        background-color: #8e8e8e90;
           position: absolute;
           top: 0;
           left: -460px;
@@ -322,7 +330,6 @@ section {
     }
   
     #menu-universe{
-        background-color: #2012b668;
         position: absolute;
         top: 0;
         left: -460px;

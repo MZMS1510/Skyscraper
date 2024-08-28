@@ -15,7 +15,8 @@ footer {
 
 .logo-container>img {
     width: inherit;
-    max-width: 60%;
+    max-width: 50%;
+    min-width: 400px;
 }
 
 .inferior-container {
@@ -29,9 +30,12 @@ footer {
 .inferior-container>section {
     width: 50%;
     min-width: 100px;
-    max-width: 200px;
+    max-width: 400px;
     margin: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
 }
 
 .inferior-container a {
@@ -41,17 +45,22 @@ footer {
 }
 
 .inferior-container a:hover {
+    text-decoration-color: white;
     text-decoration: underline;
 }
 
-.rights {
-    bottom: 20px;
-    position: relative;
-    margin: auto;
-    text-align: center;
+.social-media-container>img {
+    margin: 0px 5px;
 }
 
-@media screen and (max-width: 800px) {
+.rights {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1200px) {
     .inferior-container {
         flex-direction: column;
         align-items: center;
@@ -59,8 +68,7 @@ footer {
     }
 
     .inferior-container>section {
-        max-width: unset;
-        min-width: 85%;
+        min-width: 100%;
         margin: 50px 0px;
     }
 }

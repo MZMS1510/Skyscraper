@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
-.lexend-zetta-a {
-    font-family: "Lexend Zetta", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
-
 * {
-    margin: 0%;
-    border: 0%;
-    padding: 0%;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#fundo {
+    position: fixed;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 nav {
@@ -25,7 +29,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 15vh;
     margin-left: 5%;
     gap: 45%;
@@ -33,7 +37,7 @@ nav {
 
 #menu {
     position: fixed;
-    background-color: #ffffff;
+    background-color: #8e8e8e90;
     top: 0;
     left: -460px;
     display: flex;
@@ -45,7 +49,6 @@ nav {
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
-    opacity: 80%;
 }
 
 #open-menu {
@@ -90,7 +93,7 @@ nav {
 }
 
 #menu .link-menu {
-    color: #000000;
+    color: #fff;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -100,7 +103,6 @@ nav {
     background-color: none;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -109,7 +111,7 @@ nav {
 }
 
 #menu-universe {
-    background-color: #2012b6ab;
+    background-color: #2012b668;
     position: fixed;
     top: 0;
     left: -460px;
@@ -118,7 +120,7 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 25%;
-    height: 94vh;
+    height: 100vh;
     padding-top: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
@@ -175,9 +177,7 @@ nav {
         'wght' 400,
         'GRAD' 0,
         'opsz' 48;
-    color: #000000;
-    background-color: #fff;
-    border-radius: 10px;
+    color: #ffffff;
 }
 
 .material-symbols-outlined {
@@ -189,138 +189,105 @@ nav {
     color: #FFFCFC;
 }
 
-#fundo {
-    background-image: url(/images/header_olimpiadas_mobfog.png);
-    width: 100vw;
-    height: 40vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#noticia{
+main{
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: auto;
-}
-#container { 
-    width: 46vw;
-    padding-top: 15%;
-    font-family: saira;
-    color: #120A66;
-
+    width: 98%;
 }
 
-h1 { 
-    font-size: 3vw;
-    line-height: 1em;
+#principal {
+    display: flex;
+    justify-content: center;
+    width: 60%;
 }
 
-h3 {
-    font-size: 1.5vw;
-    padding-top: 10px;
+#fotos {
+    margin-top: 50px;
+    position: relative;
 }
 
-p{
-    font-size: 20px;
-    padding-top: 30px;
+
+#satelite {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+    width: 280px; /*testar tamanho para se adequar a tela*/
+    height: 380px; /*testar tamanho para se adequar a tela*/
 }
 
-/* Responsividade Mobile*/
+#sateliteblur {
+    position: relative;
+    width: 300px; /*testar tamanho para se adequar a tela*/
+    height: 300px; /*testar tamanho para se adequar a tela*/
+    z-index: 0;
+}
 
-@media only screen and (min-width:100px) and (max-width: 480px) {
+#texto {
+    margin-left: 5vw;
+    margin-top: 5vh;
+    text-align: left;
+}
 
-    #container-side-bar{
-        justify-content: space-between;
-        width: 80%;
+h1 {
+    font-family: "lexend zetta";
+    color: white;
+    font-size: xx-large;
+}
+
+p {
+    position: relative;
+    font-family: "Inter";
+    color: white;
+    margin-top: 20px;
+    line-height: 28px;
+    font-size: large;
+    z-index: 2;
+}
+
+@media only screen and (min-width:100px) and (max-width: 450px) {
+
+    #fundo {
+        width: 100%;
+        height: 100vh;
     }
 
-    #open-menu{
-        padding-left: 30px;
+    #texto {
+        margin-left: 50px;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+    #principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #fotos {
+        margin-top: 30px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        justify-content: center;
+    }
+
+    #satelite{
+        top: 30px;
+        left: 100px;
+        width: 200px; /*testar tamanho para se adequar a tela*/
+        height: 280px; /*testar tamanho para se adequar a tela*/
     }
     
-    .material-symbols-outlined.tm32{
-        font-size: 45px;
+    #sateliteblur {
+        width: 250px; /*testar tamanho para se adequar a tela*/
+        height: 220px; /*testar tamanho para se adequar a tela*/
     }
 
-    #menu, #menu-universe{
-        width: 100%;
-        border-radius: 0px;
-        }
-        
-        #container-section{
-            height: 100vh;
+    #texto{
+        margin-left: 10vw;
+        margin-top: 10vh;
+        margin-right: 10vw;
+        text-align: left;
     }
 
-    #fundo{
-        width: 100%;
-        height: 269px;
-    }
-    #container{
-        padding-top: 40%;
-        width: 80%;
-    }
-    h1{
-        font-size: 9vw;
-    }
-    h3{
-        font-size: 4vw;
-    }
-
-}
-
-/* Responsividade Tablet*/
-
-@media only screen and (min-width: 500px) and (max-width: 980px){
-
-    #menu .link-menu{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width: 80%;
-        height: 30px;
-        padding: 5px 5px;
-        box-sizing: border-box;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        text-align: center;
-    }
-  
-    #menu-universe .link-menu{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width: 80%;
-        height: 30px;
-        padding: 5px 5px;
-        box-sizing: border-box;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        text-align: center;
-    }
-  
-    #container-side-bar{
-        gap: 0px;
-    }
-
-    #container{
-        width: 70%;
-    }
-    
-    #fundo{
-        height: 200px;
-    }
-
-    h1{
-        font-size: 4vw;
-        padding-top: 20px;
-    }
-    h3{
-        font-size: 2vw;
-        padding-top: 15px
-    }
-    p{
-        padding-top: 30px;
-    }
-}
+   }
