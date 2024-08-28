@@ -201,7 +201,7 @@ nav{
   }
 
 #fundo{
-    background-image: url(./images/pagina-inicial-lua.jpg);
+    background-image: url(../images/pagina-inicial-lua.jpg);
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -284,7 +284,7 @@ p{
 
 @media (min-width: 100px) and (max-width: 480px) {   
 #fundo{
-    background-image: url(./images/pagina-inicial-lua-responsivo.jpg);
+    background-image: url(../images/pagina-inicial-lua-responsivo.jpg);
     width: 100%;
     height: 100%;
     position: absolute;

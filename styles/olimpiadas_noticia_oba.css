@@ -190,7 +190,7 @@ nav {
 }
 
 #fundo {
-    background-image: url(/images/obacapa.png);
+    background-image: url(../images/obacapa.png);
     width: 100vw;
     height: 40vh;
     position: absolute;

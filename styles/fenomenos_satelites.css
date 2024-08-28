@@ -49,7 +49,7 @@ main{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(./images/frame-fenomenos.png);
+    background-image: url(../images/frame-fenomenos.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ main{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(./images/frame-satelites.png);
+    background-image: url(../images/frame-satelites.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
