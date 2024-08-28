@@ -204,7 +204,7 @@ nav{
   }
 
 #fundo{
-    background-image: url(/images/pagina_noticias-galaxia.png);
+    background-image: url(./images/pagina_noticias-galaxia.png);
     width: 100%;
     height: 45vh;
     position: absolute;
