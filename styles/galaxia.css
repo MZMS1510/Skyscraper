@@ -267,10 +267,10 @@ p{
 
 
 
-  @media (min-width: 100px) and (max-width: 440px) {   
-   
+  @media (min-width: 100px) and (max-width: 440px) {
 
-    #container-galaxia{
+
+    #container-galaxia {
         display: flex;
         justify-content: left;
         align-items: center;
@@ -279,20 +279,24 @@ p{
         padding: 0;
     }
 
-    #texto_1{
-        
+    #texto_1 {
+
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 80%;
         margin: 0;
+        margin-top: 30%;
         padding: 0;
     }
-    .saira{
+
+    .saira {
         font-size: 8vw;
     }
-    #botao button{
+
+    #botao button {
         margin: 0;
+        margin-top: 30px;
         margin-left: 400px;
         width: 120px;
         padding: 5px 10px 5px 50px;
@@ -300,8 +304,8 @@ p{
         font-size: 2vw;
     }
 
-    .saira-second{
+    .saira-second {
         font-size: 4vw;
     }
-    
-    }
+
+}
