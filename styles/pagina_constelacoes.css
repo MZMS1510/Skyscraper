@@ -276,7 +276,7 @@ p {
 @media only screen and (min-width:100px) and (max-width: 450px) {
 
     body{
-        height: 250vh;
+        height: 270vh;
     }
 
     #fundo {
