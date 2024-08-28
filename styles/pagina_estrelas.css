@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
-
-::-webkit-scrollbar {
-    display: flex;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background-color: #000000;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #e7e7e7;
-  }
-
-.lexend-zetta-a {
-    font-family: "Lexend Zetta", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
 
 * {
     border: 0px;
@@ -59,7 +37,7 @@ nav {
 
 #menu {
     position: fixed;
-    background-color: #ffffff;
+    background-color: #8e8e8e90;
     top: 0;
     left: -460px;
     display: flex;
@@ -71,7 +49,6 @@ nav {
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
-    opacity: 80%;
 }
 
 #open-menu {
@@ -116,7 +93,7 @@ nav {
 }
 
 #menu .link-menu {
-    color: #000000;
+    color: #fff;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -126,7 +103,6 @@ nav {
     background-color: none;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -219,12 +195,11 @@ nav {
 }
 
 #fotos {
-    margin-top: 50px;
     position: relative;
 }
 
 
-#constelacao {
+#estrelas {
     position: absolute;
     top: 80px;
     left: 120px;
@@ -233,7 +208,7 @@ nav {
     /*testar tamanho para se adequar a tela*/
 }
 
-#constelacao_blur {
+#estrelas_blur {
     position: relative;
     width: 300px; /*testar tamanho para se adequar a tela*/
     height: 300px; /*testar tamanho para se adequar a tela*/
@@ -241,7 +216,7 @@ nav {
 
 #texto {
     margin-left: 5vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
     text-align: left;
     color: white;
     z-index: 2;
@@ -262,6 +237,7 @@ p {
     line-height: 28px;
     font-size: large;
     z-index: 2;
+
 }
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
@@ -284,13 +260,13 @@ p {
         justify-content: center;
     }
 
-    #constelacao {
+    #estrelas {
         top: 60px;
         width: 220px; /*testar tamanho para se adequar a tela*/
         height: 220px; /*testar tamanho para se adequar a tela*/
     }
     
-    #constelacao_blur {
+    #estrelas_blur {
         width: 250px; /*testar tamanho para se adequar a tela*/
         height: 220px; /*testar tamanho para se adequar a tela*/
     }
@@ -298,11 +274,13 @@ p {
     #texto{
         margin-top: 10vh;
         margin-right: 10vw;
-        width: 95%;
+        text-align: center;
+        width: 90%;
     }
 
-    .rights{
-        text-align: center;
+    p{
+        width: 70%;
+        padding-left: 15%;
     }
 
    }
