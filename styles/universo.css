@@ -45,7 +45,7 @@ nav{
 
 #menu {
     position: fixed;
-    background-color: #8e8e8eeb;
+    background-color: #8e8e8e90;
     top: 0;
     left: -460px;
     display: flex;
@@ -118,7 +118,7 @@ nav{
 }
 
 #menu-universe {
-    background-color: #2012b6c2;
+    background-color: #2012b668;
     position: fixed;
     top: 0;
     left: -460px;
@@ -128,7 +128,7 @@ nav{
     flex-direction: column;
     width: 25%;
     height: 100vh;
-    padding-top: 40px;
+    padding-top: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
     z-index: 2;

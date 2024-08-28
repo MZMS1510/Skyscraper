@@ -419,7 +419,7 @@ h2{
       align-items: center;
       flex-direction: column;
       height: 100vh;
-      padding-top: 0;
+      padding-top: 10px;
       gap: 5px;
       border-radius: 0 15px 15px 0;
   }

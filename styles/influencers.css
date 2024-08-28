@@ -26,6 +26,7 @@ nav{
     align-items: center;
     width: 70%;
     height: 8vh;
+    /* padding-top: 5%; */
     margin-left: 5%;
     gap: 45%;
 }
@@ -51,6 +52,7 @@ nav{
     background: none;
     border: none;
     cursor: pointer;
+    padding-top: 50px;
 }
 
 
@@ -115,7 +117,7 @@ nav{
     flex-direction: column;
     width: 25%;
     height: 100vh;
-    padding-top: 40px;
+    padding-left: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
@@ -265,8 +267,26 @@ section{
 
   @media only screen and (min-width:100px) and (max-width:450px) {
     body{
-        height: 182vh;
+        height: auto;
     }
+
+    #container-side-bar{
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #open-menu{
+        padding-left: 30px;
+    }
+    
+    .material-symbols-outlined.tm32{
+        font-size: 45px;
+    }
+
+    #menu, #menu-universe{
+        width: 100%;
+        border-radius: 0px;
+        }
 
     #background-container{
         height: 180vh;
@@ -314,4 +334,93 @@ section{
         margin-right: 15px;
         margin-bottom: 15px;
     }
+
+    #open-menu{
+        position: fixed;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
   }
+
+  @media only screen and (min-width: 500px) and (max-width: 980px){
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #menu .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #menu-universe .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    #open-menu{
+        position: fixed;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .container-influencer{
+        text-align: right;
+        width: 55vh;
+        height: auto;
+        margin: auto;
+        background-color: #a9a9a970;
+        border-radius: 30px;
+        margin-top: 0px;
+        margin-left: 18px;
+    }
+    
+    .container-influencer img{
+        object-fit: cover;
+        width: 100%;
+        height: 55vh;
+        border-radius: 36px 36px 0px 0px;
+    }
+    
+    .container-influencer h1{
+        
+        font-family: "Saira", sans-serif;
+        width: 23vw;
+        font-size: 1.5vw;
+        margin-top: 3.5px;
+    }
+    .button{
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: right;
+        margin-top: 10px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        color: #fff;
+        border: 2px solid white;
+        padding: 2px 5px 2px 28px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-size: 1vw;
+    }    
+}
