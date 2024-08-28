@@ -44,6 +44,7 @@ nav{
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 
@@ -192,7 +193,10 @@ body {
 }
 
 h1 {
-    padding-top: 50px;
+    font-size: 4vw;
+    position: absolute;
+    top: 35px;
+    width: 100%;
     text-align: center;
 }
 
