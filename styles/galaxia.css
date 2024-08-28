@@ -110,7 +110,7 @@ nav{
     flex-direction: column;
     width: 25%;
     height: 100vh;
-    padding-top: 40px;
+    padding-top: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
@@ -205,16 +205,23 @@ p{
     line-height: 1.5;
 }
 
+#container-galaxia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 20px;
+    margin-left: 240px;
+
+}
 #botao{
-    padding-left: 16%;
-    padding-top: 30%;
-    position: fixed;
+    text-align: center;
+    margin-right: 180px;
 }
 
 #botao button{
-    padding: 10px;
-    padding-left: 1%;
-    padding-right: 1%;
+    margin-top: 50px;
+    padding: 10px 20px 10px 70px;
     border-radius: 25px;
     border: 3px solid white;
     color: white;
@@ -223,34 +230,33 @@ p{
     background: transparent;
     cursor: pointer;
     transition: all 0.5s;
-    width: 150%;
+    font-size: 1.2vw;
 }
 
 #botao button:hover{
     box-shadow: 0 0 15px #ffffff, inset 0 0 15px #ffffff;
-    text-shadow: 0 0 15px;
+    text-shadow: 0 0 15px;  
 }
 
 .saira{
+    font-size: 3vw;
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: bold;
     font-variation-settings:
       "wdth" 100;
   }
 
   #texto_1{
-    padding-top: 10%;
-    width: 33%;
-    position: relative;
-    padding-left: 16%;
-    font-size: 22px;
-    cursor:context-menu;
-    position: fixed;
+      position: relative;
+      width: 33vw;
+      font-size: 22px;
+      cursor:context-menu;
   }
 
 
   .saira-second{
+    margin-top: 10px;
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -262,20 +268,40 @@ p{
 
 
   @media (min-width: 100px) and (max-width: 440px) {   
-    #fundo{
-        background-image: url(imagens/página_home_noticias\ \(3\)-02.jpg);
+   
+
+    #container-galaxia{
+        display: flex;
+        justify-content: left;
+        align-items: center;
         width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #texto_1{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    .saira{
+        font-size: 8vw;
+    }
+    #botao button{
+        margin: 0;
+        margin-left: 400px;
+        width: 120px;
+        padding: 5px 10px 5px 50px;
+        border-radius: 25px;
+        font-size: 2vw;
+    }
+
+    .saira-second{
+        font-size: 4vw;
+    }
     
-    }
-    h1{
-       font-size: 2rem;
-       text-align: center;
-       padding-top: 150px;
-    }
     }

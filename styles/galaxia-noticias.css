@@ -1,21 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
-}
-
-#fundo {
-    position: fixed;
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
 }
 
 nav {
@@ -29,7 +17,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 15vh;
     margin-left: 5%;
     gap: 45%;
@@ -37,7 +25,7 @@ nav {
 
 #menu {
     position: fixed;
-    background-color: #8e8e8e90;
+    background-color: #8e8e8eef;
     top: 0;
     left: -460px;
     display: flex;
@@ -111,7 +99,7 @@ nav {
 }
 
 #menu-universe {
-    background-color: #2012b668;
+    background-color: #2012b6ab;
     position: fixed;
     top: 0;
     left: -460px;
@@ -120,7 +108,7 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 25%;
-    height: 100vh;
+    height: 94vh;
     padding-top: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
@@ -177,7 +165,9 @@ nav {
         'wght' 400,
         'GRAD' 0,
         'opsz' 48;
-    color: #ffffff;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .material-symbols-outlined {
@@ -189,65 +179,138 @@ nav {
     color: #FFFCFC;
 }
 
-#principal {
+#fundo {
+    background-image: url(/images/pagina_notícias-galaxia.png);
+    width: 100vw;
+    height: 38.24vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#noticia{
     display: flex;
     justify-content: center;
+    width: 100vw;
+    height: auto;
+}
+#container { 
+    width: 46vw;
+    padding-top: 15%;
+    font-family: saira;
+    color: #120A66;
+
 }
 
-#fotos {
-    margin-top: 50px;
-    position: relative;
+h1 { 
+    font-size: 3vw;
+    line-height: 1em;
 }
 
-
-#terra {
-    position: absolute;
-    top: 80px;
-    left: 120px;
-    z-index: 1;
-    width: 280px;
-    height: 280px;
+h3 {
+    font-size: 1.5vw;
+    padding-top: 10px;
 }
 
-#terrablur {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    z-index: 0;
+p{
+    font-size: 20px;
+    padding-top: 30px;
 }
 
-#texto {
-    margin-left: 5vw;
-    margin-top: 5vh;
-    text-align: left;
-}
+/* Responsividade Mobile*/
 
-h1 {
-    font-family: "lexend zetta";
-    color: white;
-    font-size: xx-large;
-}
+@media only screen and (min-width:100px) and (max-width: 480px) {
 
-p {
-    position: relative;
-    font-family: "Inter";
-    color: white;
-    margin-top: 20px;
-    line-height: 28px;
-    font-size: large;
-    z-index: 2;
-}
+    #container-side-bar{
+        justify-content: space-between;
+        width: 80%;
+    }
 
-@media only screen and (min-width:100px) and (max-width: 450px) {
+    #open-menu{
+        padding-left: 30px;
+    }
+    
+    .material-symbols-outlined.tm32{
+        font-size: 45px;
+    }
 
-    #fundo {
+    #menu, #menu-universe{
         width: 100%;
-        height: 269vh;
+        border-radius: 0px;
+        }
+        
+        #container-section{
+            height: 100vh;
     }
 
-    #texto {
-        margin-left: 50px;
-        margin-top: 40px;
-        text-align: left;
+    #fundo{
+        width: 100%;
+        height: 269px;
     }
-   }
+    #container{
+        padding-top: 40%;
+        width: 80%;
+    }
+    h1{
+        font-size: 9vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+
+}
+
+/* Responsividade Tablet*/
+
+@media only screen and (min-width: 500px) and (max-width: 980px){
+
+    #menu .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #menu-universe .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #container-side-bar{
+        gap: 0px;
+    }
+
+    #container{
+        width: 70%;
+    }
+    
+    #fundo{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 4vw;
+        padding-top: 20px;
+    }
+    h3{
+        font-size: 2vw;
+        padding-top: 15px
+    }
+    p{
+        padding-top: 30px;
+    }
+}

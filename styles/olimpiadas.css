@@ -41,7 +41,7 @@ nav{
     justify-content: flex-start;
     align-items: center;
     width: 70%;
-    height: 15vh;
+    height: 7vh;
     margin-left: 5%;
     gap: 45%;
 }
@@ -131,7 +131,7 @@ nav{
     flex-direction: column;
     width: 25%;
     height: 100vh;
-    padding-top: 40px;
+    padding-top: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
@@ -213,12 +213,10 @@ section {
 
 #container-texto {
     position: relative;
-    max-width: 100%;
     text-align: center;
     font-family: "Lexend Zetta", sans-serif;
     font-weight: bold;
-    font-size: 25px;
-    padding-top: 10px;
+    font-size: 2vw;
 }
 
 .container-olimpiadas {
@@ -264,4 +262,106 @@ section {
 .button:hover {
     box-shadow: 0 0 15px #868686, inset 0 0 15px #868686;
     text-shadow: 0 0 15px ease-in-out;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 450px){
+
+    #container-side-bar{
+        justify-content: space-between;
+        width: 90%;
+      }
+
+  #menu-universe{
+      height: 100vh;
+      padding-top: 0;
+  }
+
+  #menu, #menu-universe{
+      width: 100%;
+      border-radius: 0px;
+      }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    #container-texto{
+        font-size: 4vw;
+    }
+    .container-olimpiadas{
+        margin-top: 10px;
+    }
+    .container-olimpiadas h1{        
+        font-size: 4vw;
+    }
+    .button{
+        font-size: 2.4vw;
+        margin: 15px;
+        
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width: 980px) {
+    
+    #menu {
+        background-color: #8e8e8e90;
+          position: absolute;
+          top: 0;
+          left: -460px;
+          height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        padding-top: 15px;
+        gap: 10px;
+        border-radius: 0 15px 15px 0;
+    }
+  
+    #menu-universe{
+        background-color: #2012b668;
+        position: absolute;
+        top: 0;
+        left: -460px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 0;
+        gap: 5px;
+        border-radius: 0 15px 15px 0;
+    }
+  
+    #menu .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #menu-universe .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+  
+    #container-side-bar{
+        gap: 0px;
+    }
 }
