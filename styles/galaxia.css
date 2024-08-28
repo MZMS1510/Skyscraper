@@ -211,16 +211,16 @@ p{
     justify-content: center;
     height: 70vh;
     margin-top: 20px;
-    margin-left: 200px;
-    border: 1px solid green;
+    margin-left: 240px;
 
 }
 #botao{
     text-align: center;
-    margin-right: 150px;
+    margin-right: 180px;
 }
 
 #botao button{
+    margin-top: 50px;
     padding: 10px 20px 10px 70px;
     border-radius: 25px;
     border: 3px solid white;
@@ -230,6 +230,7 @@ p{
     background: transparent;
     cursor: pointer;
     transition: all 0.5s;
+    font-size: 1.2vw;
 }
 
 #botao button:hover{
@@ -255,7 +256,6 @@ p{
 
 
   .saira-second{
-    border: 1px solid red;
     margin-top: 10px;
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
@@ -269,4 +269,39 @@ p{
 
   @media (min-width: 100px) and (max-width: 440px) {   
    
+
+    #container-galaxia{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #texto_1{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    .saira{
+        font-size: 8vw;
+    }
+    #botao button{
+        margin: 0;
+        margin-left: 400px;
+        width: 120px;
+        padding: 5px 10px 5px 50px;
+        border-radius: 25px;
+        font-size: 2vw;
+    }
+
+    .saira-second{
+        font-size: 4vw;
+    }
+    
     }
