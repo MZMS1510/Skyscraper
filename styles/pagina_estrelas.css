@@ -195,12 +195,11 @@ nav {
 }
 
 #fotos {
-    margin-top: 50px;
     position: relative;
 }
 
 
-#constelacao {
+#estrelas {
     position: absolute;
     top: 80px;
     left: 120px;
@@ -209,7 +208,7 @@ nav {
     /*testar tamanho para se adequar a tela*/
 }
 
-#constelacao_blur {
+#estrelas_blur {
     position: relative;
     width: 300px; /*testar tamanho para se adequar a tela*/
     height: 300px; /*testar tamanho para se adequar a tela*/
@@ -217,7 +216,7 @@ nav {
 
 #texto {
     margin-left: 5vw;
-    margin-top: 5vh;
+    margin-top: 2vh;
     text-align: left;
     color: white;
     z-index: 2;
@@ -238,6 +237,7 @@ p {
     line-height: 28px;
     font-size: large;
     z-index: 2;
+
 }
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
@@ -260,13 +260,13 @@ p {
         justify-content: center;
     }
 
-    #constelacao {
+    #estrelas {
         top: 60px;
         width: 220px; /*testar tamanho para se adequar a tela*/
         height: 220px; /*testar tamanho para se adequar a tela*/
     }
     
-    #constelacao_blur {
+    #estrelas_blur {
         width: 250px; /*testar tamanho para se adequar a tela*/
         height: 220px; /*testar tamanho para se adequar a tela*/
     }
@@ -274,11 +274,13 @@ p {
     #texto{
         margin-top: 10vh;
         margin-right: 10vw;
-        width: 95%;
+        text-align: center;
+        width: 90%;
     }
 
-    .rights{
-        text-align: center;
+    p{
+        width: 70%;
+        padding-left: 15%;
     }
 
    }
