@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
@@ -208,16 +207,16 @@ main{
 }
 
 
-#terra {
+#satelite {
     position: absolute;
     top: 80px;
-    left: 120px;
+    left: 80px;
     z-index: 1;
     width: 280px; /*testar tamanho para se adequar a tela*/
-    height: 280px; /*testar tamanho para se adequar a tela*/
+    height: 380px; /*testar tamanho para se adequar a tela*/
 }
 
-#terrablur {
+#sateliteblur {
     position: relative;
     width: 300px; /*testar tamanho para se adequar a tela*/
     height: 300px; /*testar tamanho para se adequar a tela*/
@@ -272,13 +271,14 @@ p {
         justify-content: center;
     }
 
-    #terra {
-        top: 60px;
-        width: 220px; /*testar tamanho para se adequar a tela*/
-        height: 220px; /*testar tamanho para se adequar a tela*/
+    #satelite{
+        top: 30px;
+        left: 100px;
+        width: 200px; /*testar tamanho para se adequar a tela*/
+        height: 280px; /*testar tamanho para se adequar a tela*/
     }
     
-    #terrablur {
+    #sateliteblur {
         width: 250px; /*testar tamanho para se adequar a tela*/
         height: 220px; /*testar tamanho para se adequar a tela*/
     }
