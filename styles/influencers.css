@@ -288,8 +288,18 @@ section{
         border-radius: 0px;
         }
 
+    #open-menu{
+        position: fixed;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
     #background-container{
-        height: 180vh;
+        width: 100%;
+        height: 195vh;
+        background-position: center center;
+
     }
     #container-texto {
         font-size: 4vw;
@@ -333,13 +343,6 @@ section{
         font-size: 3vw;
         margin-right: 15px;
         margin-bottom: 15px;
-    }
-
-    #open-menu{
-        position: fixed;
-        background: none;
-        border: none;
-        cursor: pointer;
     }
   }
 
