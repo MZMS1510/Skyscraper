@@ -15,6 +15,7 @@ footer {
 
 .logo-container>img {
     width: inherit;
+    max-width: 60%;
 }
 
 .inferior-container {
