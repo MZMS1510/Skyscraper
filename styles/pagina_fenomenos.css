@@ -189,6 +189,16 @@ nav {
     color: #FFFCFC;
 }
 
+body{
+    width: 100vw;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 98%;
+}
+
 #principal {
     display: flex;
     justify-content: center;
@@ -215,7 +225,7 @@ nav {
 }
 
 #texto {
-    margin-left: 5vw;
+    margin-left: 12vw;
     margin-top: 2vh;
     text-align: left;
     color: white;
@@ -242,15 +252,26 @@ p {
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
 
+    body{
+        height: 245vh;
+    }
+
     #fundo {
         width: 100%;
         height: 100vh;
     }
 
+    #texto {
+        margin-left: 50px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    
     #principal {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     #fotos {
@@ -263,28 +284,19 @@ p {
     #fenomenos {
         top: 60px;
         width: 220px; /*testar tamanho para se adequar a tela*/
-        height: 220px; /*testar tamanho para se adequar a tela*/
+        height: 280px; /*testar tamanho para se adequar a tela*/
     }
     
     #fenomenos_blur {
-        width: 250px; /*testar tamanho para se adequar a tela*/
-        height: 220px; /*testar tamanho para se adequar a tela*/
+        width: 280px; /*testar tamanho para se adequar a tela*/
+        height: 280px; /*testar tamanho para se adequar a tela*/
     }
 
     #texto{
+        margin-left: 10vw;
         margin-top: 10vh;
         margin-right: 10vw;
-        text-align: center;
-        width: 90%;
-    }
-
-    p{
-        width: 70%;
-        padding-left: 15%;
-    }
-
-    .rights{
-        text-align: center;
+        text-align: left;
     }
 
    }

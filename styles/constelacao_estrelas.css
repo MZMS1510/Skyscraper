@@ -49,7 +49,7 @@ main{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(/images/frame-constelaçoes.png);
+    background-image: url(../images/frame-constelaçoes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@ main{
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(/images/frame-estrelas.png);
+    background-image: url(../images/frame-estrelas.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

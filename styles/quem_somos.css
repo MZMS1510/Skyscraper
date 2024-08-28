@@ -2,31 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
-::-webkit-scrollbar {
-    display: flex;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background-color: #000000;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #e7e7e7;
-  }
-
-.lexend-zetta-a {
-    font-family: "Lexend Zetta", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 main{
@@ -53,7 +37,7 @@ nav{
 
 #menu {
     position: fixed;
-    background-color: #ffffff;
+    background-color: #8e8e8e90;
     top: 0;
     left: -460px;
     display: flex;
@@ -65,7 +49,6 @@ nav{
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
-    opacity: 80%;
 }
 
 #open-menu{
@@ -110,7 +93,7 @@ nav{
       color: #ffffff;
   }
 #menu .link-menu {
-    color: #000000;
+    color: #fff;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -120,7 +103,6 @@ nav{
     background-color: none;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -207,11 +189,36 @@ nav{
     color: #FFFCFC;
   }
 
+  h1{
+    text-align: center;
+  }
+
+  p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Saira", sans-serif;
+  }
+
+  .logo-container{
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+    background-color: transparent;
+    color: #DDD;
+    font-family: "Lexend Zetta", Arial, Helvetica, sans-serif;
+  }
+
+  #logo{
+    width: 30vw;
+    height: 15vh;
+  }
+
 #background-container{
     position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/pagina-inicial-rodape.png);
+    width: 100vw;
+    height: 230vh;
+    background-image: url(/images/pexels-pixabay-76969.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,18 +238,27 @@ section{
     
 }
 #container-texto {
-    position: relative;
-    max-width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    width: 38vw;
+    height: 20vh;
+    color: var(--Primria03, #120A66);
     text-align: center;
-    font-family: "Lexend Zetta", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    
+    font-family: Saira;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
 }
 
 .container-influencer{
     text-align: right;
-    width: 55vh;
+    width: 50vh;
     height: auto;
     margin: auto;
     background-color: #a9a9a970;
@@ -265,32 +281,26 @@ section{
     font-size: 2vw;
     margin-top: 5px;
 }
-.button{
-    display: inline-block;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: right;
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    color: #fff;
-    border: 2px solid white;
-    padding: 2px 5px 2px 28px;
-    border-radius: 14px;
-    text-decoration: none;
-    font-size: 1.3vw;
-}
 
-.button:hover{
-    box-shadow: 0 0 15px #868686, inset 0 0 15px #868686;
-    text-shadow: 0 0 15px ease-in-out;
-  }
 
   @media only screen and (min-width:100px) and (max-width:450px) {
     body{
         height: auto;
     }
+
+    #container-texto{
+        margin: auto;
+        height: auto;
+        width: 90vw;
+    }
+
+    .logo-container{
+        width: 100vw;
+    }
+
+    #logo{
+        width: 90vw;
+      }
 
     #container-side-bar{
         justify-content: space-between;
@@ -319,7 +329,7 @@ section{
 
     #background-container{
         width: 100%;
-        height: 195vh;
+        height: 370vh;
         background-position: center center;
 
     }
@@ -332,8 +342,9 @@ section{
         flex-wrap: wrap;
         height: 140vh;
         padding-left: 50px;
-        margin-left: 25px;
-        width: 60%;
+        margin-left: 10px;
+        width: 90%;
+        margin-top: 30px;
         
     }
 
@@ -348,8 +359,9 @@ section{
     }
 
     .container-influencer img{
+        float: left;
         width: 100%;
-        height: 30vh;
+        height: 36vh;
         margin: 0;
         padding: 0;
     }
@@ -360,12 +372,9 @@ section{
         font-size: 4.3vw;
         margin-top: 5px;
         margin-right: 18px;
+        
     }
-    .button{
-        font-size: 3vw;
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
+    
   }
 
   @media only screen and (min-width: 500px) and (max-width: 980px){
@@ -432,20 +441,5 @@ section{
         font-size: 1.5vw;
         margin-top: 3.5px;
     }
-    .button{
-        display: inline-block;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: right;
-        margin-top: 10px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        color: #fff;
-        border: 2px solid white;
-        padding: 2px 5px 2px 28px;
-        border-radius: 14px;
-        text-decoration: none;
-        font-size: 1vw;
-    }    
+      
 }
