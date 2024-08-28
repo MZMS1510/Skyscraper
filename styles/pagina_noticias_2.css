@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
+body{
+    overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
     display: flex;
   }
@@ -11,7 +15,7 @@
     background-color: #000000;
   }
   
-  ::-webkit-scrollbar-thumb {
+    ::-webkit-scrollbar-thumb {
     background: #e7e7e7;
   }
 
@@ -204,7 +208,7 @@ nav {
 }
 
 #fundo {
-    background-image: url(/images/pagina_noticias-galaxia.png);
+    background-image: url(/images/pagina-noticia2.png);
     width: 100vw;
     height: 38.24vh;
     position: absolute;
