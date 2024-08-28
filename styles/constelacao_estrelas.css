@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
+.lexend-zetta-a {
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
 *{
     margin: 0;
     padding: 0;
@@ -75,7 +82,7 @@ nav{
 }
 
 #menu {
-    background-color: #8e8e8ee8;
+    background-color: #ffffff;
     position: absolute;
     top: 0;
     left: -460px;
@@ -88,6 +95,7 @@ nav{
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
+    opacity: 80%;
 }
 
 #open-menu{
@@ -130,7 +138,7 @@ nav{
 }
 
 #menu .link-menu {
-    color: #fff;
+    color: #000000;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -139,6 +147,7 @@ nav{
     box-sizing: border-box;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -393,7 +402,6 @@ h2{
 @media only screen and (min-width: 500px) and (max-width: 980px) {
 
     #menu {
-      background-color: #8e8e8e90;
         position: absolute;
         top: 0;
         left: -460px;
@@ -409,7 +417,6 @@ h2{
   }
 
   #menu-universe{
-      background-color: #2012b668;
       position: absolute;
       top: 0;
       left: -460px;
