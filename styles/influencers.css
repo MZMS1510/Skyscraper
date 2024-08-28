@@ -298,6 +298,8 @@ section{
     #background-container{
         width: 100%;
         height: 195vh;
+        background-position: center center;
+
     }
     #container-texto {
         font-size: 4vw;
