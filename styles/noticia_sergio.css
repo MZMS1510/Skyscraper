@@ -213,6 +213,7 @@ nav {
     position: relative;
     width: 300px; /*testar tamanho para se adequar a tela*/
     height: 300px; /*testar tamanho para se adequar a tela*/
+    z-index: 0;
 }
 
 #texto {
