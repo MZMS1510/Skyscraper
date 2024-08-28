@@ -1,14 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
-
-.lexend-zetta-a {
-    font-family: "Lexend Zetta", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
 
 * {
     border: 0px;
@@ -46,7 +37,7 @@ nav {
 
 #menu {
     position: fixed;
-    background-color: #ffffff;
+    background-color: #8e8e8e90;
     top: 0;
     left: -460px;
     display: flex;
@@ -58,7 +49,6 @@ nav {
     gap: 20px;
     border-radius: 0 15px 15px 0;
     z-index: 2;
-    opacity: 80%;
 }
 
 #open-menu {
@@ -103,7 +93,7 @@ nav {
 }
 
 #menu .link-menu {
-    color: #000000;
+    color: #fff;
     text-align: start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 80%;
@@ -113,7 +103,6 @@ nav {
     background-color: none;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
 }
 
 #menu .link-menu:hover {
@@ -218,16 +207,16 @@ main{
 }
 
 
-#terra {
+#satelite {
     position: absolute;
     top: 80px;
-    left: 120px;
+    left: 80px;
     z-index: 1;
     width: 280px; /*testar tamanho para se adequar a tela*/
-    height: 280px; /*testar tamanho para se adequar a tela*/
+    height: 380px; /*testar tamanho para se adequar a tela*/
 }
 
-#terrablur {
+#sateliteblur {
     position: relative;
     width: 300px; /*testar tamanho para se adequar a tela*/
     height: 300px; /*testar tamanho para se adequar a tela*/
@@ -282,13 +271,14 @@ p {
         justify-content: center;
     }
 
-    #terra {
-        top: 60px;
-        width: 220px; /*testar tamanho para se adequar a tela*/
-        height: 220px; /*testar tamanho para se adequar a tela*/
+    #satelite{
+        top: 30px;
+        left: 100px;
+        width: 200px; /*testar tamanho para se adequar a tela*/
+        height: 280px; /*testar tamanho para se adequar a tela*/
     }
     
-    #terrablur {
+    #sateliteblur {
         width: 250px; /*testar tamanho para se adequar a tela*/
         height: 220px; /*testar tamanho para se adequar a tela*/
     }
