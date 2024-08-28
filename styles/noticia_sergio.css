@@ -268,7 +268,7 @@ p {
     z-index: 2;
 }
 
-@media only screen and (min-width:100px) and (max-width: 450px) {
+@media only screen and (min-width:100px) and (max-width: 480px) {
 
     body{
         height: 245vh;
@@ -315,6 +315,89 @@ p {
         margin-top: 10vh;
         margin-right: 10vw;
         text-align: left;
+    }
+
+
+    #container-side-bar{
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #open-menu{
+        padding-left: 30px;
+    }
+    
+    .material-symbols-outlined.tm32{
+        font-size: 45px;
+    }
+
+    #menu, #menu-universe{
+        width: 100%;
+        border-radius: 0px;
+        }
+
+    #open-menu{
+        position: fixed;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+   }
+
+   @media screen and (min-width: 500px) and (max-width: 980px) {
+    
+    #menu {
+        position: absolute;
+        top: 0;
+        left: -460px;
+        height: 96.2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        padding-top: 15px;
+        gap: 10px;
+        border-radius: 0 15px 15px 0;
+    }
+
+    #menu-universe{
+        position: absolute;
+        top: 0;
+        left: -460px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 0;
+        gap: 5px;
+        border-radius: 0 15px 15px 0;
+    }
+
+    #menu .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    #menu-universe .link-menu{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 80%;
+        height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-align: center;
     }
 
    }

@@ -282,7 +282,7 @@ p{
 
 
 
-@media (min-width: 100px) and (max-width: 440px) {   
+@media (min-width: 100px) and (max-width: 480px) {   
 #fundo{
     background-image: url(/images/pagina-inicial-lua-responsivo.jpg);
     width: 100%;
@@ -298,4 +298,30 @@ h1{
    font-size: 30px;
    padding-top: 200px;
 }
+
+#container-side-bar{
+    justify-content: space-between;
+    width: 80%;
+}
+
+#open-menu{
+    padding-left: 30px;
+}
+
+.material-symbols-outlined.tm32{
+    font-size: 45px;
+}
+
+#menu, #menu-universe{
+    width: 100%;
+    border-radius: 0px;
+    }
+
+#open-menu{
+    position: fixed;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 }
