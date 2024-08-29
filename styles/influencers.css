@@ -36,8 +36,12 @@ main{
 nav{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 15vh;
+}
+
+nav button{
+    padding: 10px;
 }
 
 #container-side-bar{
@@ -73,7 +77,6 @@ nav{
     background: none;
     border: none;
     cursor: pointer;
-    padding-top: 50px;
 }
 
 
@@ -237,7 +240,7 @@ section{
     font-family: "Lexend Zetta", sans-serif;
     font-weight: bold;
     font-size: 25px;
-    
+    top: 0px;
 }
 
 .container-influencer{
@@ -326,6 +329,7 @@ section{
     #container-texto {
         font-size: 4vw;
         padding-top: 10px;
+        top: 0;
     }
     section{
         display: flex;
@@ -366,9 +370,17 @@ section{
         margin-right: 15px;
         margin-bottom: 15px;
     }
+
+    nav button{
+        top: 0;
+    }
   }
 
   @media only screen and (min-width: 500px) and (max-width: 980px){
+    #menu, #menu-universe{
+        width: 40%;
+        border-radius: 0px;
+        }
 
     h1{
         font-size: 1.5rem;
@@ -447,5 +459,9 @@ section{
         border-radius: 14px;
         text-decoration: none;
         font-size: 1vw;
-    }    
+    }
+    
+    nav button{
+        top: 5px;
+    }
 }

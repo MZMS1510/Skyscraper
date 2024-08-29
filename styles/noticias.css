@@ -218,7 +218,7 @@ body {
 h1 {
     font-size: 4em;
     position: absolute;
-    top: 20px;
+    top: 0px;
     width: 100%;
     text-align: center;
 }
@@ -296,6 +296,7 @@ h1 {
 
     h1 {
         font-size: 3em;
+        top: 45px;
     }
 
     #container-side-bar{
@@ -375,5 +376,9 @@ h1 {
   
     #container-side-bar{
         gap: 0px;
+    }
+
+    h1{
+        top: -35px;
     }
 }

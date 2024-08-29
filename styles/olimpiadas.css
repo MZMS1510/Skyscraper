@@ -240,6 +240,7 @@ section {
     font-family: "Lexend Zetta", sans-serif;
     font-weight: bold;
     font-size: 2vw;
+    top: -13px;
 }
 
 .container-olimpiadas {
@@ -322,6 +323,10 @@ section {
         font-size: 2.4vw;
         margin: 15px;
         
+    }
+
+    #open-menu{
+        margin-left: 20px;
     }
 
 }
