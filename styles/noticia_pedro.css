@@ -214,8 +214,11 @@ nav {
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 80vh;
 }
 #principal {
     display: flex;
@@ -266,6 +269,16 @@ p {
     line-height: 28px;
     font-size: large;
     z-index: 2;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#social-media>p{
+    font-family: "Lexend Zetta";
 }
 
 @media only screen and (min-width:100px) and (max-width: 480px) {
