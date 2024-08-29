@@ -239,7 +239,7 @@ nav{
 #background-container{
     position: absolute;
     width: 100vw;
-    height: 230vh;
+    height: 280vh;
     background-image: url(../images/pexels-pixabay-76969.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -255,9 +255,7 @@ section{
     padding: 0 5vw;
     width: 100vw;
     margin-top: 10px;
-    
-    
-    
+
 }
 #container-texto {
     margin: auto;
@@ -293,7 +291,7 @@ section{
 .container-influencer img{
     object-fit: cover;
     width: 100%;
-    height: 55vh;
+    height: 70vh;
     border-radius: 36px 36px 0px 0px;
 }
 
@@ -309,14 +307,17 @@ section{
   @media only screen and (min-width:100px) and (max-width:450px) {
 
     body{
-        height: auto;
+        height: 410vh;
+    }
+    #background-container{
+        height: 200vh;
     }
 
     #container-texto{
         margin: auto;
         height: auto;
         width: 90vw;
-        margin-bottom: 100px;
+        margin-top: 300px;
     }
 
     .logo-container{
@@ -324,7 +325,9 @@ section{
     }
 
     #logo{
-        width: 90vw;
+        margin-top: 200px;
+        width: 91vw;
+        height: 10vh;
       }
 
     #container-side-bar{
@@ -354,15 +357,10 @@ section{
 
     #background-container{
         width: 100%;
-        height: 370vh;
+        height: 515vh;
         background-position: center center;
 
     }
-    #container-texto {
-        padding-top: 10px;
-    }
-
-
     section{
         display: flex;
         flex-wrap: wrap;
@@ -370,34 +368,36 @@ section{
         padding-left: 50px;
         margin-left: 10px;
         width: 90%;
-        margin-top: 30px;
+        
     }
 
     .container-influencer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 0px;
         padding: 0px;
         width: 100vh;
-        height: auto;
-        margin-top: 30px;
+        height: 120vw;
+        margin-top: 60px;
         background-color: #a9a9a970;
-        border-radius: 36px; 
+        border-radius: 36px;
+        border: 1px solid red;
     }
 
     .container-influencer img{
         float: left;
         width: 100%;
-        height: 36vh;
+        height: 45vh;
         margin: 0;
         padding: 0;
     }
     .container-influencer h1{
         display: flex;
-        justify-content: end;
+        justify-content: center;
         width: 62vw;
         font-size: 4.3vw;
         margin-top: 5px;
-        margin-right: 18px;
-        
     }
     
   }
