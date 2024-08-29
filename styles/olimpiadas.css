@@ -306,6 +306,11 @@ section {
       border-radius: 0px;
       }
     
+      #background-container {
+        height: 160vh;
+
+    
+    }
     section{
         display: flex;
         flex-direction: column;
@@ -339,14 +344,14 @@ section {
           top: 0;
           left: -460px;
           height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 40%;
-        padding-top: 15px;
-        gap: 10px;
-        border-radius: 0 15px 15px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 40%;
+          padding-top: 15px;
+          gap: 10px;
+          border-radius: 0 15px 15px 0;
     }
   
     #menu-universe{
