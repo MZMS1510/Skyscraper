@@ -9,11 +9,11 @@
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    background-color: #000000;
+    background-color: #ffffff;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #e7e7e7;
+    background: #000000;
   }
 
 .lexend-zetta-a {
