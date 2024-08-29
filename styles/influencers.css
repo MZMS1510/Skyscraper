@@ -331,6 +331,11 @@ section{
         padding-top: 10px;
         top: 0;
     }
+
+    #container-texto h1{
+        font-size: 1.2rem;
+    }
+
     section{
         display: flex;
         flex-wrap: wrap;
