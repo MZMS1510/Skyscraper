@@ -136,7 +136,7 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 25%;
-    height: 94vh;
+    height: 100vh;
     padding-top: 10px;
     gap: 10px;
     border-radius: 0 15px 15px 0;
@@ -185,6 +185,7 @@ nav {
 
 .material-symbols-outlined.tm32 {
     font-size: 45px;
+    color: #000000;
 }
 
 .material-symbols-outlined.openMenu {
@@ -194,7 +195,7 @@ nav {
         'GRAD' 0,
         'opsz' 48;
     color: #000000;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 10px;
 }
 

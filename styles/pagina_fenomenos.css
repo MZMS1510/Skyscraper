@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
+::-webkit-scrollbar {
+    display: flex;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e7e7e7;
+  }
+
 * {
     border: 0px;
     margin: 0px;
