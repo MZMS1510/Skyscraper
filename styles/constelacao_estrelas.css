@@ -283,13 +283,22 @@ nav{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .poppins-light-a:hover{
+    box-shadow: 0 0 15px #ffffff, 
+    inset 0 0 15px #ffffff;
+    text-shadow: 0 0 15px ease-in-out;
   }
 
   .poppins-light-p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #ffffff;  
+    color: #ffffff;
     }
 
   #secao1, #secao2{
@@ -348,8 +357,8 @@ h2{
 }
 
 .container-saiba-mais a:hover{
-    color: #a9a9a9;
-    border: 2px solid #a9a9a9;
+    color: white;
+    border: 2px solid white;
 }
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
@@ -407,8 +416,8 @@ h2{
     }
 
     .container-saiba-mais a:hover{
-        color: #a9a9a9;
-        border-color: #a9a9a9;
+        color: white;
+        border-color: white;
     }
 
     }
@@ -492,8 +501,8 @@ h2{
 }
 
 .container-saiba-mais a:hover{
-    color: #a9a9a9;
-    border-color: #a9a9a9;
+    color: white;
+    border-color: white;
 }
 
 }
