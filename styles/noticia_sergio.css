@@ -214,8 +214,11 @@ nav {
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 80vh;
 }
 #principal {
     display: flex;
@@ -235,7 +238,7 @@ main{
     left: 80px;
     z-index: 1;
     width: 280px; /*testar tamanho para se adequar a tela*/
-    height: 320px; /*testar tamanho para se adequar a tela*/
+    height: 330px; /*testar tamanho para se adequar a tela*/
     border-radius: 36px;
 }
 
@@ -271,9 +274,14 @@ p {
 #social-media{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.social-media-container>img {
+#social-media>p{
+    font-family: "Lexend Zetta";
+}
+
+.social-media-container img {
     margin: 0px 5px;
 }
 
@@ -343,6 +351,7 @@ p {
     #menu, #menu-universe{
         width: 100%;
         border-radius: 0px;
+        z-index: 2;
         }
 
     #open-menu{
