@@ -255,6 +255,7 @@ section{
     padding: 0 5vw;
     width: 100vw;
     margin-top: 10px;
+    flex-wrap: wrap;
 
 }
 #container-texto {

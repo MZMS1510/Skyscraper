@@ -334,7 +334,19 @@ h2{
     justify-content: flex-start;
     padding-left: 15px;
     align-items: center;
-    width: 85%;
+    width: 80%;
+    height: 15vh;
+    margin-left: 4px;
+    background-color: #a9a9a970;
+    border-radius: 20px;
+}
+
+.container-text-constelacoes{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    align-items: center;
+    width: 70%;
     height: 15vh;
     margin-left: 4px;
     background-color: #a9a9a970;
@@ -343,22 +355,35 @@ h2{
 
 .container-saiba-mais{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-left: 250px;
     align-items: center;
+    margin-top: 10px;
 }
 
-.container-saiba-mais a{
-    text-align: right;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid white;
-    padding: 4px 10px 4px 28px;
-    border-radius: 14px;
+
+#botao{
+    padding-left: 5%;
+    padding-top: 25px;
+    position: fixed;
 }
 
-.container-saiba-mais a:hover{
+#botao button{
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid white;
     color: white;
-    border: 2px solid white;
+    font-family: Saira;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 150%;
+}
+
+#botao button:hover{
+    box-shadow: 0 0 15px #ffffff, 
+    inset 0 0 15px #ffffff;
+    text-shadow: 0 0 15px ease-in-out;
 }
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
