@@ -345,11 +345,17 @@ h2{
     border: 2px solid white;
     padding: 4px 10px 4px 28px;
     border-radius: 14px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .container-saiba-mais a:hover{
-    color: #a9a9a9;
-    border: 2px solid #a9a9a9;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 0 15px #ffffff, 
+    inset 0 0 15px #ffffff;
+    text-shadow: 0 0 15px ease-in-out;
 }
 
 @media only screen and (min-width:100px) and (max-width: 450px) {
@@ -490,8 +496,8 @@ h2{
 }
 
 .container-saiba-mais a:hover{
-    color: #a9a9a9;
-    border-color: #a9a9a9;
+    color: white;
+    border-color: white;
 }
 
 }
