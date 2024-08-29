@@ -415,13 +415,11 @@ button a{
     }
 
     .container-saiba-mais a{
-        border: 0.5px solid white;
         font-size: 0.6rem;
     }
 
     .container-saiba-mais a:hover{
         color: #a9a9a9;
-        border-color: #a9a9a9;
     }
 
     #open-menu{

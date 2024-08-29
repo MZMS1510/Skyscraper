@@ -362,13 +362,13 @@ h2{
 }
 
 
-#botao{
+.botao{
     padding-left: 5%;
     padding-top: 25px;
     position: fixed;
 }
 
-#botao button{
+.botao button{
     padding: 10px;
     border-radius: 25px;
     border: 3px solid white;
@@ -380,7 +380,7 @@ h2{
     width: 150%;
 }
 
-#botao button:hover{
+.botao button:hover{
     box-shadow: 0 0 15px #ffffff, 
     inset 0 0 15px #ffffff;
     text-shadow: 0 0 15px ease-in-out;
@@ -435,20 +435,31 @@ button a{
         font-size: 1.7rem;
     }
 
-
     .container-text{
         height: 8vh;
         font-size: 0.5rem;
     }
 
+    .container-text-constelacoes{
+        height: 8vh;
+        font-size: 0.5rem;
+    }
+
+    .container-saiba-mais{
+        left: 20px;
+    }
+
     .container-saiba-mais a{
-        border: 0.5px solid white;
         font-size: 0.6rem;
     }
 
     .container-saiba-mais a:hover{
         color: white;
         border-color: white;
+    }
+
+    .botao{
+        margin-right: 50px;
     }
 
     }
@@ -536,4 +547,14 @@ h2{
     border-color: white;
 }
 
+.container-saiba-mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .botao{
+    left: 0px;
+
+}
 }
