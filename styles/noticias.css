@@ -291,7 +291,8 @@ h1 {
 
 @media screen and (max-width: 480px) {
     .noticia p {
-        overflow-y: scroll;
+        font-size: 26px;
+        line-height: 30px;
     }
 
     h1 {
