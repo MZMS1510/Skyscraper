@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+
+body{
+    overflow-x: hidden;
+}
 
 ::-webkit-scrollbar {
     display: flex;
@@ -29,37 +33,18 @@
     padding: 0%;
 }
 
-
-main {
-    color: #ffffff;
-    width: 100%;
-    height: auto;
-}
-
-#fundo {
-    background-image: url(../images/pagina-inicial-universo.png);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 15vh;
 }
 
-#container-side-bar{
+#container-side-bar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 90%;
     height: 15vh;
     margin-left: 5%;
     gap: 45%;
@@ -82,7 +67,7 @@ nav{
     opacity: 80%;
 }
 
-#open-menu{
+#open-menu {
     position: fixed;
     background: none;
     border: none;
@@ -92,36 +77,37 @@ nav{
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-  }
-  
-  #close-menu {
-      display: flex;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      border: none;
-      border-radius: 50%;
-      background-color: #ffffff;
-      padding: 2px;
-  }
-  
-  #close-menu:hover{
-      background-color: #000000;
-  }
-  
-  #close{
-      color: #000000;
-  }
-  
-  #close:hover{
-      color: #ffffff;
-  }
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+#close-menu {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+#close-menu:hover {
+    background-color: #000000;
+}
+
+#close {
+    color: #000000;
+}
+
+#close:hover {
+    color: #ffffff;
+}
+
 #menu .link-menu {
     color: #000000;
     text-align: start;
@@ -198,179 +184,118 @@ nav{
     text-decoration-color: #ffffff;
 }
 
-.material-symbols-outlined.tm32{
+.material-symbols-outlined.tm32 {
     font-size: 45px;
+    color: #000000;
 }
 
 .material-symbols-outlined.openMenu {
     font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48;
-    color: #ffffff;
-  }
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    color: #000000;
+    background-color: #000000;
+    border-radius: 10px;
+}
 
 .material-symbols-outlined {
     font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48;
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
     color: #FFFCFC;
-  }
-
-h1 {
-    font-size: 5vw;
-    width: 40vw;
 }
 
-p {
-    line-height: 1.5;
+#fundo {
+    background-image: url(../images/algomerado-de-estrelas.jpg);
+    width: 100%;
+    height: 38.24vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-a {
-    color: white;
-    text-decoration: none;
+#noticia{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
 }
-
-#botao {
-    position: relative;
-    padding-left: 4%;
-    padding-top: 5%;
-    width: 15vw;
-}
-
-#botao button {
-    position: relative;
-    padding: 10px;
-    width: 250px;
-    font-size: 1rem;
-    border-radius: 25px;
-    border: 3px solid white;
-    color: white;
-    background-color: black;
-    font-family: Saira;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.5s;
+#container { 
+    width: 46vw;
+    padding-top: 15%;
+    font-family: saira;
+    color: #120A66;
 
 }
 
-#botao button:hover {
-    box-shadow: 0 0 15px #ffffff, inset 0 0 15px #ffffff;
-    text-shadow: 0 0 15px ease-in-out;
+h1 { 
+    font-size: 3vw;
+    line-height: 1em;
 }
 
-.titulo {
-    position: relative;
-    margin: auto;
-    font-family: "Lexend Zetta", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-variation-settings: "wdth" 100;
+h3 {
+    font-size: 1.5vw;
+    padding-top: 10px;
 }
 
-#texto_1 {
-    position: relative;
-    padding-top: 5%;
-    width: 40%;
-    padding-left: 4%;
-    font-size: 23px;
-    cursor: context-menu;
+p{
+    font-size: 20px;
+    padding-top: 30px;
 }
 
+/* Responsividade Mobile*/
 
-.saira-second {
-    width: 30vw;
-    font-size: 1.9vw;
-    font-family: "Saira", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
-
-@media only screen and (min-width:100px) and (max-width: 450px) {
+@media only screen and (min-width:100px) and (max-width: 480px) {
 
     #container-side-bar{
         justify-content: space-between;
-        width: 90%;
-      }
-
-  #menu-universe{
-      height: 100vh;
-      padding-top: 0;
-  }
-
-  #menu, #menu-universe{
-      width: 100%;
-      border-radius: 0px;
-      }
-
-    .titulo {
-        padding-top: 40%;
-        padding-left: 20%;
-        font-size: 7vw;
-        width: 80vw;
-    }
-
-    .saira-second {
-        position: relative;
-        width: 50vw;
-        padding-left: 20%;
-        font-size: 3vw;
-    }
-
-    #botao {
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        padding-left: 0%;
-        padding-top: 0%;
-    }
-
-    button {
-        padding: 10px;
-        width: 130px;
-        font-size: 0.6rem;
+        width: 80%;
     }
 
     #open-menu{
-        margin-left: 10%;
+        padding-left: 30px;
     }
+    
+    .material-symbols-outlined.tm32{
+        font-size: 45px;
+    }
+
+    #menu, #menu-universe{
+        width: 100%;
+        border-radius: 0px;
+        }
+        
+        #container-section{
+            height: 100vh;
+    }
+
+    #fundo{
+        width: 100%;
+        height: 269px;
+    }
+    #container{
+        padding-top: 40%;
+        width: 80%;
+    }
+    h1{
+        font-size: 9vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+
 }
 
-@media screen and (min-width: 500px) and (max-width: 980px) {
-    #menu {
-          position: absolute;
-          top: 0;
-          left: -460px;
-          height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 40%;
-        gap: 10px;
-        border-radius: 0 15px 15px 0;
-    }
-  
-    #menu-universe{
-        position: absolute;
-        top: 0;
-        left: -460px;
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        padding-top: 0;
-        gap: 5px;
-        border-radius: 0 15px 15px 0;
-    }
-  
+/* Responsividade Tablet*/
+
+@media only screen and (min-width: 500px) and (max-width: 980px){
+
     #menu .link-menu{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 80%;
@@ -393,5 +318,29 @@ a {
         border-radius: 5px;
         font-size: 0.9rem;
         text-align: center;
+    }
+  
+    #container-side-bar{
+        gap: 0px;
+    }
+
+    #container{
+        width: 70%;
+    }
+    
+    #fundo{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 4vw;
+        padding-top: 20px;
+    }
+    h3{
+        font-size: 2vw;
+        padding-top: 15px
+    }
+    p{
+        padding-top: 30px;
     }
 }
