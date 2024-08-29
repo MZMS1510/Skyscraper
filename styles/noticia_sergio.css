@@ -238,7 +238,7 @@ main{
     left: 80px;
     z-index: 1;
     width: 280px; /*testar tamanho para se adequar a tela*/
-    height: 320px; /*testar tamanho para se adequar a tela*/
+    height: 330px; /*testar tamanho para se adequar a tela*/
     border-radius: 36px;
 }
 
