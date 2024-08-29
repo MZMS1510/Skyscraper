@@ -283,10 +283,13 @@ section{
     border-radius: 14px;
     text-decoration: none;
     font-size: 1.3vw;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .button:hover{
-    box-shadow: 0 0 15px #868686, inset 0 0 15px #868686;
+    box-shadow: 0 0 15px #ffffff, 
+    inset 0 0 15px #ffffff;
     text-shadow: 0 0 15px ease-in-out;
   }
 
