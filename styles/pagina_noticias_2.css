@@ -209,7 +209,7 @@ nav {
 }
 
 #fundo {
-    background-image: url(/images/pagina-noticia2.png);
+    background-image: url(../images/pagina-noticia2.png);
     width: 100vw;
     height: 38.24vh;
     position: absolute;
