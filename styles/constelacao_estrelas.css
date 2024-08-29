@@ -386,6 +386,12 @@ h2{
     text-shadow: 0 0 15px ease-in-out;
 }
 
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
 @media only screen and (min-width:100px) and (max-width: 450px) {
     
     #container-side-bar{
