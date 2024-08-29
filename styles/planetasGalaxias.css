@@ -410,12 +410,16 @@ h2{
         border-color: #a9a9a9;
     }
 
+    #open-menu{
+        padding-left: 30px;
+    }
+
     }
 
 @media only screen and (min-width: 500px) and (max-width: 980px) {
 
     #menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -460px;
         height: 100vh;
@@ -430,7 +434,7 @@ h2{
   }
 
   #menu-universe{
-      position: absolute;
+      position: fixed;
       top: 0;
       left: -460px;
       width: 40%;
