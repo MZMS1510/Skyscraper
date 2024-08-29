@@ -343,6 +343,7 @@ p {
     #menu, #menu-universe{
         width: 100%;
         border-radius: 0px;
+        z-index: 2;
         }
 
     #open-menu{
