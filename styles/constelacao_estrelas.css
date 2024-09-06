@@ -55,15 +55,14 @@ main{
     background-size: cover;
     float: left;
 }
-
-#background-constelacao{
+#background-constelacao {
     position: relative;
     width: 50%;
     height: 100vh;
-    background-image: url(../images/frame-estrelas.png);
+        background-image: url(../images/frame-estrelas.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+        background-size: cover;
     float: left;
 }
 
@@ -74,16 +73,14 @@ nav{
 .material-symbols-outlined.tm32{
     font-size: 45px;
 }
-
 .material-symbols-outlined {
     font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48;
+        'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
     color: #FFFCFC;
-  }
-
+}
 #container-side-bar{
     display: flex;
     justify-content: flex-start;
@@ -297,6 +294,7 @@ nav{
   .poppins-light-p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    font-size: 1.3em;
     font-style: normal;
     color: #ffffff;
     }
@@ -304,8 +302,10 @@ nav{
   #secao1, #secao2{
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: #ffffff;
     gap: 10px;
+    width: 50%;
 }
 
 #container-section{
@@ -318,11 +318,13 @@ nav{
 }
 
 #title1, #title2{
-    margin-right: 50px;
+    width: 100%;
+        text-shadow: 5px 5px 15px black;
 }
 
 h1{
-    font-size: 3.5rem;
+    text-align: center;
+        font-size: 4vw;
 }
 
 h2{
@@ -334,30 +336,16 @@ h2{
     justify-content: flex-start;
     padding-left: 15px;
     align-items: center;
-    width: 80%;
-    height: 15vh;
+    width: 60%;
+        height: 20vh;
     margin-left: 4px;
-    background-color: #a9a9a970;
-    border-radius: 20px;
-}
-
-.container-text-constelacoes{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 15px;
-    align-items: center;
-    width: 70%;
-    height: 15vh;
-    margin-left: 4px;
-    background-color: #a9a9a970;
+    backdrop-filter: blur(50px);
     border-radius: 20px;
 }
 
 .container-saiba-mais{
     display: flex;
     justify-content: center;
-    margin-left: 250px;
-    align-items: center;
     margin-top: 10px;
 }
 

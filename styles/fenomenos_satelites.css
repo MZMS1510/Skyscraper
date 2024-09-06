@@ -288,6 +288,7 @@ nav{
 
   .poppins-light-p {
     font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
     font-weight: 400;
     font-style: normal;
   }
@@ -295,6 +296,8 @@ nav{
   #secao1, #secao2{
     display: flex;
     flex-direction: column;
+    align-items: center;
+        width: 50%;
     color: #ffffff;
     gap: 10px;
 }
@@ -309,15 +312,13 @@ nav{
 }
 
 #title1, #title2{
-    text-align: right;
+    width: 100%;
 }
 
 h1{
-    font-size: 3.5rem;
-}
-
-h2{
-    font-size: 3.7rem;
+    font-size: 4rem;
+        text-align: center;
+        text-shadow: 5px 5px 15px black;
 }
 
 .container-text{
@@ -325,23 +326,22 @@ h2{
     justify-content: flex-start;
     padding-left: 15px;
     align-items: center;
-    width: 85%;
-    height: 15vh;
+    width: 70%;
+        height: 20vh;
     margin-left: 4px;
-    background-color: #a9a9a970;
+    backdrop-filter: blur(50px);
     border-radius: 20px;
 }
 
 .container-saiba-mais{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
     margin-top: 10px;
 }
 
 
 #botao{
-    padding-left: 12%;
+    padding-left: 5%;
     padding-top: 25px;
     position: fixed;
 }
