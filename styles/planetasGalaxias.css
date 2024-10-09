@@ -289,7 +289,7 @@ nav{
   .poppins-light-p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-style: normal;
     color: #ffffff;  
     }
@@ -314,7 +314,7 @@ nav{
 
 #title1, #title2{
     width: 100%;
-    text-align: center;
+        text-align: center;
         text-shadow: 5px 5px 15px black;
 }
 

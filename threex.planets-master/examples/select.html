@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../favicon.ico.ico" type="image/x-icon">
+  <title>Skyscraper - Observatório</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 99vh;
+      background-color: #000;
+    }
+    .button-container {
+      position: absolute;
+      top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      z-index: 1;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+      transform: scale(1.1);
+    }
+
+    button:active {
+      background-color: #777;
+    }
+
+    @media (max-width: 768px) {
+      button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      button {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick='switchValue("Sun")'>Sol</button>
+    <button onclick='switchValue("Mercury")'>Mercúrio</button>
+    <button onclick='switchValue("Venus")'>Vênus</button>
+    <button onclick='switchValue("Earth")'>Terra</button>
+    <button onclick='switchValue("Moon")'>Lua</button>
+    <button onclick='switchValue("Mars")'>Marte</button>
+    <button onclick='switchValue("Jupiter")'>Júpiter</button>
+    <button onclick='switchValue("Saturn")'>Saturno</button>
+    <button onclick='switchValue("Uranus")'>Urano</button>
+    <button onclick='switchValue("Neptune")'>Netuno</button>
+    <button onclick='switchValue("Pluto")'>Plutão</button>
+  </div>
+
+  <script src="vendor/three.js/build/three.min.js"></script>
+  <script src="../threex.planets.js"></script>
+  <script>
+    var renderer = new THREE.WebGLRenderer({
+      antialias: true
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+    renderer.shadowMapEnabled = true;
+
+    var updateFcts = [];
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 100);
+    camera.position.z = 1.5;
+
+    var light = new THREE.AmbientLight(0x888888);
+    scene.add(light);
+
+    var light = new THREE.DirectionalLight(0xcccccc, 1);
+    light.position.set(5, 5, 5);
+    scene.add(light);
+    light.castShadow = true;
+
+    var starSphere = THREEx.Planets.createStarfield();
+    scene.add(starSphere);
+
+    var currentMesh = null;
+
+    function switchValue(type) {
+      currentMesh && scene.remove(currentMesh);
+      var mesh;
+      switch (type) {
+        case 'Sun': mesh = THREEx.Planets.createSun(); break;
+        case 'Mercury': mesh = THREEx.Planets.createMercury(); break;
+        case 'Venus': mesh = THREEx.Planets.createVenus(); break;
+        case 'Earth': 
+          mesh = THREEx.Planets.createEarth();
+          var cloud = THREEx.Planets.createEarthCloud();
+          mesh.add(cloud);
+          break;
+        case 'Moon': mesh = THREEx.Planets.createMoon(); break;
+        case 'Mars': mesh = THREEx.Planets.createMars(); break;
+        case 'Jupiter': mesh = THREEx.Planets.createJupiter(); break;
+        case 'Saturn': 
+          mesh = THREEx.Planets.createSaturn();
+          var ring = THREEx.Planets.createSaturnRing();
+          mesh.add(ring);
+          break;
+        case 'Uranus': 
+          mesh = THREEx.Planets.createUranus();
+          var ring = THREEx.Planets.createUranusRing();
+          mesh.add(ring);
+          break;
+        case 'Neptune': mesh = THREEx.Planets.createNeptune(); break;
+        case 'Pluto': mesh = THREEx.Planets.createPluto(); break;
+        default: console.assert(false);
+      }
+      scene.add(mesh);
+      currentMesh = mesh;
+      location.hash = type;
+    }
+
+    var initialType = location.hash.substr(1) || 'Earth';
+    switchValue(initialType);
+
+    var mouse = { x: 0, y: 0 };
+    document.addEventListener('mousemove', function(event) {
+      mouse.x = (event.clientX / window.innerWidth) - 0.5;
+      mouse.y = (event.clientY / window.innerHeight) - 0.5;
+    }, false);
+
+    updateFcts.push(function(delta) {
+      camera.position.x += (mouse.x * 5 - camera.position.x) * (delta * 3);
+      camera.position.y += (mouse.y * 5 - camera.position.y) * (delta * 3);
+      camera.lookAt(scene.position);
+    });
+
+    updateFcts.push(function() {
+      renderer.render(scene, camera);
+    });
+
+    var lastTimeMsec = null;
+    requestAnimationFrame(function animate(nowMsec) {
+      requestAnimationFrame(animate);
+      lastTimeMsec = lastTimeMsec || nowMsec - 1000 / 60;
+      var deltaMsec = Math.min(200, nowMsec - lastTimeMsec);
+      lastTimeMsec = nowMsec;
+      updateFcts.forEach(function(updateFn) {
+        updateFn(deltaMsec / 1000, nowMsec / 1000);
+      });
+    });
+  </script>
+</body>
+</html>
